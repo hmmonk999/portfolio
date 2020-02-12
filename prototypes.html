@@ -6,8 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hannah Monk's DOT Web Design Internship</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
-  </head>
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">	  
+	<style>
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prevRenderSlide, .nextRenderSlide {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.nextRenderSlide {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		
+		.prevRenderSlide {
+			left: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prevRenderSlide:hover, .nextRenderSlide:hover {
+		  background-color: #F7A132;;
+		}
+  
+	</style>
+	
+	</head>
+	
   <body>
   <div class="container">
    <div class="row">
@@ -46,31 +89,89 @@
 	  
 	    
       <div class="col-md-9 col-sm-12 whiteBox" style="border-top: solid 8px #F2F2F2">
-      <div class="row">
-        <div class="col-12">
-			<h3>Prototypes</h3>
-			<h4>Prototyping for my Digital Portfolio</h4>
-			<h6>User Stories</h6>
-			<ul>
-				<li>A</li>
-				<li>B</li>
-				<li>C</li>
-			</ul>
 		 
+		  
+      <div class="row">
+		<h3>Prototypes</h3><br>
+		  <div class="col-12"><h4>Prototype for this Portfolio</h4></div>
+		  
+        <div class="col-12"> 
+<!--
+			<div class="row text-center">
+		  <div class="col-lg-6 col-md-6 col-sm-12"><br><h5>Planning</h5><img class="img-thumbnail" alt="3d render of a metal ship ship"  src="images/3d/ship.png" style="width: 90%;"></div>
+		  <div class="col-lg-6 col-md-6 col-sm-12"><br><h5>Paper Wirefram</h5><img class="img-thumbnail" alt="3d render of a small metal robot with clear marble as a head"  src="images/3d/man.png" style="width: 90%;"></div>
+-->
+   
         <div class="row text-center">
-		
-		  <div class="col-lg-6 col-md-6 col-sm-12"><br><h6>Paper Prototype</h6><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
-          <div class="col-lg-6 col-md-6 col-sm-12"><br><h6>Paper Prototype</h6><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
-        </div>
+			<div class="col-12"><h5 style="margin-top: 1em">Adobe XD Prototypes</h5></div>
+			<p class="col-12" style="color: #888888">note: digital prototypes were modified by grouping them together so they were present better in this format</p>
+			<div class="slideshow-container">
+				<div class="mySlides">
+				  <img src="images/p1.png" alt="0 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:90%" class="img-thumbnail">
+				</div>
+
+				<div class="mySlides">
+				  <img src="images/p2.png" alt="45 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:90%" class="img-thumbnail">
+				</div>
+
+				<div class="mySlides">
+				  <img src="images/p3.png" alt="90 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:90%" class="img-thumbnail">
+				</div>
+				
+				<div class="mySlides">
+				  <img src="images/p4.png" alt="135 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:90%" class="img-thumbnail">
+				</div>
+
+				<a class="prevRenderSlide" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="nextRenderSlide" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+				</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+			
 			<br>
+
+			</div>
+		<br>
 	  </div>
-		
+
 	</div>
     </div>
 	</div>
 	  </div>
 	      <footer class="row">
-			<div class="col-12"><img class="wavy-line" src="waves.png" style="width:100%"></div>
+			<div class="col-12"><img class="wavy-line" alt="waves that moves up and down" src="waves.png" style="width:100%"></div>
 			<div class="bottomNav col-2">
 			</div>
 			<div class="bottomNav col-4">
@@ -106,39 +207,40 @@
 				<hr>
 			<div class="bottomNav col-2">
 				<div class="boatMove">
-				  <img src="boat.png" class="boat" alt="paper boat that moves left and right" />
+				  <img src="boat.png" class="boat" alt="tugboat" />
 				</div>
 			</div>
   		  </footer>
 	
+	  
 	<center><nav class="navSticky">
-	<div class="row text-center">
-			<span style="width: 20%"><a class="active" href="index.html#aboutSec"><img src="icons/aboutSmol.png" alt="about me icon" style="width: 90%; margin:.5px">About</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#skillsSec"><img src="icons/skillsSmol.png" alt="skills icon" style="width: 90%; margin: .5px">Skills</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#resumeSec"><img src="icons/resSmol.png" alt="resume icon" style="width: 90%; margin: .5px">Resume</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#contactSec"><img src="icons/contSmol.png" alt="contact information icon" style="width: 90%; margin: .5px">Contact</a></span>
-			<span style="width: 20%"><a class="active" href="#" onclick="openNav()"><img src="icons/protSmol.png" alt="design portfolio icon" style="width: 90%; margin: .5px">Portfolio</a></span>
+		<div class="row text-center">
+			<span style="width: 20%"><a class="active" href="index.html#aboutSec"><img src="icons/aboutSmol.png" alt="about me icon" style="width: 70%; margin:.5px">About</a></span>
+			<span style="width: 20%"><a class="active" href="index.html#resumeSec"><img src="icons/resSmol.png" alt="resume icon" style="width: 70%; margin: .5px">Resume</a></span>
+			<span style="width: 20%"><a class="active" href="index.html#skillsSec"><img src="icons/skillsSmol.png" alt="skills icon" style="width: 70%; margin: .5px"><br>Skills</a></span>
+			<span style="width: 20%"><a class="active" href="index.html#contactSec"><img src="icons/contSmol.png" alt="contact information icon" style="width: 70%; margin: .5px">Contact</a></span>
+			<span style="width: 20%"><a class="active" href="#" onclick="openNav()"><img src="icons/protSmol.png" alt="design portfolio icon" style="width: 70%; margin: .5px">Portfolio</a></span>
 		</div>
 	</nav></center>
 	  
-	<div id="myNav" class="overlayMobileNav">
+<div id="myNav" class="overlayMobileNav">
   <a href="javascript:void(0)" class="closeMobileNav" onclick="closeNav()">&times;</a>
   <div class="overlayMobileNav-content">
 	  <h4 style="margin-top: 15px;"><u>Project Portfolio</u></h4>
 			<a href="websites.html">Websites</a>
-	  		<strong><a href="prototypes.html" style="color: #111044">Prototypes</a></strong>
+	 		<strong><a href="prototypes.html" style="color: #111044">Prototypes</a></strong>
 			<a href="videos.html">Videos</a>
-			<a href="renderings.html">3D Renderings</a>
+	  		<a href="renderings.html">3D Renderings</a>
 			<a href="digital.html">Digital Art</a>
-	 		<a href="doc.html">Documentation</a>
+			<a href="doc.html">Documentation</a>
 			
-		<br>
-	    <h4><u>Work Experience</u></h4>
+		<br><br>
+		<h4><u>Work Experience</u></h4>
 			<a href ="videoEditor.html">Video Editor</a>
 	  		<a href="DOT.html">Web Design Internship</a>
-	  		<a href="leepfrog.html">Client Services Internship</a>
+			<a href="leepfrog.html">Client Services Internship</a>
 	</div>
-	  </div>
+	  </div> 
 	  <script>
 		function openNav() {
 		  document.getElementById("myNav").style.height = "100%";
@@ -148,6 +250,8 @@
 		  document.getElementById("myNav").style.height = "0%";
 		}
 	  </script>
+	
+	
 	  
 	  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
