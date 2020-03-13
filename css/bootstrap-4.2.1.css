@@ -26,6 +26,7 @@ html {
 .imageGrow{
 	width: 40%;
 	margin: 10px;
+	max-width: 5em;
 }
 
 .imageGrow:hover {
@@ -36,6 +37,7 @@ html {
 .imageSmol {
 	width: 30%;
 	margin: 5px;
+	max-width: 4.5em;
 }
 
 .imageSmol:hover {
