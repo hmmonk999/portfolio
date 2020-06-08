@@ -1299,7 +1299,7 @@ pre code {
 		font-size: .3em;
 	}
 	nav ul li {
-		font-size: 45%;
+		font-size: 40%;
 		padding: 2px 2px 5px 2px;
 	}
 	#portMenu {
@@ -1320,6 +1320,10 @@ pre code {
 	#aboutBackground {
 	border-top-left-radius: 5% 5%;
     border-top-right-radius: 5% 4%;
+	}
+	
+	#videoIntro {
+		display: none;
 	}
 }
 
@@ -1494,6 +1498,9 @@ pre code {
 	.bar1, .bar2, .bar3 {
 	  width: 23px;
 	  height: 2.5px;
+	}
+	#videoIntro {
+		display: inline-block;
 	}
 }
 
