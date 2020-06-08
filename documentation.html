@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentation by Hannah Monk</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="hmm.ico" />
+	 <style>
+		 @media (min-width: 0px) {
+			.side img {
+				width: 100%;
+				height: auto;
+			}
+			 #whiteBackground {
+				 display: none;
+			 }
+			 #paragraphInstructions {
+				 display: none;
+			 }
+		 }
+		 @media (min-width: 576px) {
+			.flipCard {
+			   position: absolute;
+			   width: 100%;
+			   height: auto;
+			}
+			.flipCard .card.flipped {
+			-webkit-animation: flipFold 2.5s;
+					animation: flipFold 2.5s;
+			  -webkit-animation-fill-mode: forwards;
+					  animation-fill-mode: forwards;
+			  -webkit-transform-origin: left;
+				  -ms-transform-origin: left;
+					  transform-origin: left;
+			  position: relative;
+			}
+				@keyframes flipFold {
+				  /* You could think of as "step 1" */
+				  0% {
+					transform:scaleX(1); transform-origin:left;
+				  }
+
+					50% {
+						transform:scaleX(0); transform-origin:left;
+					}
+					51% {
+						transform: scaleX(0) rotateY(-180deg); transform-origin:left;
+					}
+				  /* You could think of as "step 2" */
+				  100% {
+					transform:scaleX(1) rotateY(-180deg); transform-origin: left;;
+				  }
+				}
+			.flipCard .card {
+			  -webkit-transform-style: preserve-3d;
+			  -webkit-transition: 0.5s;
+			  -moz-transform-style: preserve-3d;
+			  -moz-transition: 0.5s;
+			  -ms-transform-style: preserve-3d;
+			  -ms-transition: 0.5s;
+			  -o-transform-style: preserve-3d;
+			  -o-transition: 0.5s;
+			  transform-style: preserve-3d;
+			  transition: 0.5s;
+			}
+			.flipCard .card .side {
+			  cursor: pointer;
+			  position: absolute;
+			  z-index: 2;
+			  backface-visibility: hidden;  /* W3C */
+			  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+			  -moz-backface-visibility: hidden; /* Firefox */
+			  -ms-backface-visibility: hidden; /* Internet Explorer */
+			  -o-backface-visibility: hidden; /* Opera */
+			  overflow: inherit;
+			}
+			.flipCard .card .back {
+				position: absolute;
+			  -webkit-transform:rotatey(-180deg);
+				-ms-transform:rotatey(-180deg);
+					transform:rotatey(-180deg);
+			-webkit-transform-origin: left;
+				-ms-transform-origin: left;
+					transform-origin: left;
+			}
+			.side img {
+				width: 100%;
+				height: auto;
+			}
+			 #whiteBackground {
+				 display: block;
+			 }
+			 #paragraphInstructions {
+				 display: block;
+			 }
+		 }
+	</style>
+	  
+  </head>
+  <body>
+	 <nav role="navigation">
+	  	<ul id="topNav" class="navLarge" aria-label="menu">
+		  <a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="Hannah Monk .me homepage"></a>
+		  <li><a href="index.html#aboutSec">About Me</a></li>
+		  <li><a href="index.html#resumeSec">Resume</a></li>
+		  <li><a href="index.html#contactSec">Contact</a></li>
+		  <li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true">Portfolio
+			  <span id="moveHam" aria-hidden="true">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </span>
+			  </a></span></li>
+		</ul>
+	  
+		<!-- Top Navigation Menu -->
+		<div class="hamnav container-lg">
+		  <div id="stripe"></div>
+		  <div id="portLinks">
+			<ul class="row text-center" aria-label="submenu">
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="videos.html">VIDEO ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="documentation.html">DOCUMENTATION</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="websites.html">WEB DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="digital_art.html">DIGITAL ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="game_design.html">GAME DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="ux_design.html">UX DESIGN</a></li>
+			</ul>
+		  </div>
+		</div>
+    </nav>
+	  <! –– name, top section ––>
+	  <div class="container-lg">
+	  <div class="row" id="topBackground" style="padding: 0 0 2em 0">
+		  <div class="col-12">
+			   <h1 class="ml1">
+				  <span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">Documentation</span>
+					<span class="line line2"></span>
+				  </span> 
+				</h1>
+			  <h3><span class="ml13">Technical Writing</span> <span style="margin: .5em">&boxbox;</span> <span class="ml132">Research Papers</span> <span style="margin: .5em">&boxbox;</span> <span class="ml133">Document Design</span></h3>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		  </div>  
+	  </div>
+	  </div>
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+				<h3>Iowa DOT Bureau of Investigations Careers Brochure</h3>
+				<p>The brochure is designed to be handed out at career fairs and other recruitement events.</p>
+				<p><strong style="margin-bottom: 2px; font-size: 110%">Iowa DOT Brand Standards</strong></p>
+				<p style="margin: 1px;"><strong>Typography:</strong></p>
+					<div class="row">
+						<div class="col-6">
+						<p><u>Header</u><br>PT Sans</p>
+						</div>
+						<div class="col-6">
+						<p><u>Body</u><br>Arial, 12 pt size</p>
+						</div>
+					</div>
+					
+				<p><strong>Colors:</strong></p>
+					<div class="row" style="font-size: 70%;">
+						<div class="col-4">
+							<div style="width: 60%; height: 3.5em; background-color: #7C2529;"></div>
+							<p>PANTONE 1815<br>HEX: 7C2529<br>RGB: 124 37 41<br>CMYK: 16 97 86 54</p>
+						</div>
+						<div class="col-4">
+							<div style="width: 60%; height: 3.5em; background-color: #53565A;"></div>
+							<p>COOL GREY 11<br>HEX: 53565A<br>RGB: 83 86 90<br>CMYK: 44 34 22 77</p>
+						</div>
+						<div class="col-4">
+							<div style="width: 60%; height: 3.5em; background-color: #B1B3B3;"></div>
+							<p>COOL GREY 5<br>HEX: B1B3B3<br>RGB: 177 179 179<br>CMYK: 13 9 10 27</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-11 col-sm-11 text-center">
+					<div class="flipCard"> 
+					  <div class="card" style="border: none" onclick="this.classList.toggle('flipped');"> 
+						  <div class="side front"><img src="documents/front.png"></div>
+						<div class="side back"><img src="documents/back.png"></div> 
+					  </div> 
+					</div>
+					<img src="documents/whiteBackground.png" alt="" role="presentation" style="width: 100%;" id="whiteBackground">
+					<p style="margin-top: 2em; color: #777777;" id="paragraphInstructions">Click on the brochure to flip to the other side.</p>
+				</div>
+			  </div>
+		  </div>
+	  
+	  <div class="container">
+	    <div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="row">
+					<div class="col-12">
+						<h4>Document Design</h4>
+						<p style="color: #777777">Click on the images to see the full document</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/InstructionGuide.pdf" target="_blank"><h5 style="margin-top: 5px">Adobe Illustrator Beginner's Guide</h5><img src="documents/illustratorCover.png" class="img-thumbnail"></a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/NASA.pdf" target="_blank"><h5 style="margin-top: 5px">NASA Next Magazine</h5><img src="documents/NASACover.png" class="img-thumbnail"></a>
+					</div>
+					 <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/STC.pdf" target="_blank"><h5 style="margin-top: 5px">STC Club Flyer Series</h5><img src="documents/stcMeeting2.png" class="img-thumbnail"></a>
+					</div>
+				</div>
+			</div>
+        	<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="row">
+					<div class="col-12">
+						<h4>Technical Writing</h4>
+						<p style="color: #777777">Click on the images to see the full document</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/InDesignDescription.pdf" target="_blank"><h5 style="margin-top: 5px">Technical Description</h5><img src="documents/indesign.png" class="img-thumbnail"></a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/UsabilityReport.pdf" target="_blank"><h5 style="margin-top: 5px">Accessibility Report</h5><img src="documents/accessibility.png" class="img-thumbnail"></a>
+					</div>
+					 <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<a href="documents/PaperAirplaneInstructions.pdf" target="_blank"><h5 style="margin-top: 5px">Paper Airplane Instructions</h5><img src="documents/planeCover.png" class="img-thumbnail"></a>
+					</div>
+				</div>
+			</div>
+        	
+			
+		 </div>
+		<br>
+		<hr>
+			
+		<div class="row">
+			<div class="col-12">
+				<h4>Research Papers</h4>
+			</div>
+			<div class="col-12">
+				<p><a href ="documents/navigation.pdf" target="_blank"><u>Website Navigation</u></a> - written by Hannah Monk in Fall 2019</p>
+				<p><a href ="documents/UXandParadigmShift.pdf" target="_blank"><u>User Experience and Paradigm Shifts</u></a> - written by Hannah Monk in Spring 2019</p>
+				<p><a href ="documents/TechnologyAndChildrensLit.pdf" target="_blank"><u>Combining Technology and Children's Literature</u></a> - written by Hannah Monk in Fall 2018</p>
+			</div>
+        </div>
+			<br>
+	  </div>
+		
+	  <! –– Footer ––>
+	     <footer class="container-lg">
+		   <div class="row">
+			   <div class="col-12" style="margin: 0 0 0em 0">
+				  <img class="wavy-line" src="images/waves.png" style="width:100%">
+				<div class="boatMove">
+				  <img src="images/boat.png" class="boat" alt="paper boat moving left and right" />
+				</div>
+				</div>
+			</div>
+		   <div class="row">
+			<div class="col-lg-3 col-md-12 col-sm-12">
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<br>
+				<h5>Connect with me on:</h5>
+					<ul class="social row">
+					<div class="col-6"><li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><img src="images/linked.png" style="width: 15%;" alt="">LinkedIn</a></li></div>
+					<div class="col-6"><li><a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ" target="_blank"><img src="images/youTube.png" style="width: 15%;" alt="">YouTube</a></li></div>
+					<div class="col-6"><li><a href="mailto:hannahmmonk@gmail.com" target="_blank"><img src="images/email.png" style="width: 15%" alt="">Email</a></li></div>
+					<div class="col-6"><li><a href="https://github.com/hmmonk999" target="_blank"><img src="images/GitHub-Mark.png" style="width: 15%;" alt="">GitHub</a></li></div>
+					</ul>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 1.5em">
+				<br>
+				<h5>Menu</h5>	
+				<a href="index.html#aboutSec" style="margin: 0 5px">About</a>
+				<a href="index.html#resumeSec" style="margin: 0 5px">Resume</a>
+				<a href="index.html#contactSec" style="margin: 0 5px">Contact</a>
+				<hr>
+				<p id="modify">Last Modified: <span id="modDate"></span></p>
+			</div>
+			    <div class="col-12" style="width: 100%; background-color: #0C151E; margin: 0;"><center><p>HannahMonk.me &copy; 2020 All Rights Reserved</p></center></div>
+			</div>
+  		  </footer>
+	  
+
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	  <script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+			  if($(window).scrollTop() >= 5) {
+				$("#topNav").animate({fontSize: "130%"}, { duration: 20, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 20, queue: false });
+				$("#topNav").animate({padding: ".2em"}, { duration: 20, queue: false });
+				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 20, queue: false });
+			  }
+			  
+			  if($(window).scrollTop() < 5) {
+				$("#topNav").animate({fontSize: "160%"}, { duration: 10, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 10, queue: false });
+				$("#topNav").animate({padding: ".75em"}, { duration: 10, queue: false });
+				$("#moveHam").animate({margin: "5px 0 0 8px"}, { duration: 10, queue: false });
+			  }
+		  });
+		});
+	  </script>
+	  
+	  <script>
+		var textWrapper = document.querySelector('.ml1 .letters');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  
+		   var textWrapper2 = document.querySelector('.ml13');
+		   var textWrapper3 = document.querySelector('.ml132');
+		  	var textWrapper4 = document.querySelector('.ml133');
+		  textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		   textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  	textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+			targets: '.ml1 .letter',
+			scale: [0.3,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 * (i+1)
+		  }).add({
+			targets: '.ml1 .line',
+			scaleX: [0,1],
+			opacity: [0.5,1],
+			easing: "easeOutExpo",
+			duration: 500,
+			offset: '-=875',
+			delay: (el, i, l) => 80 * (l - i)
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 0 + 30 * i
+		  }).add({
+			targets: '.ml132 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml133 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 200,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [-100,-100],
+			opacity: [1,1],
+			easing: "easeInExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  });
+	  </script>
+	   <script>
+	  var x = document.lastModified;
+	  document.getElementById("modDate").innerHTML = x;
+	  </script>
+	  <script>
+		function myFunction(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
+		  } else {
+			y.style.display = "block";
+		  }
+		}
+		</script>
+	    <script>
+		function changeIcon(x) {
+		  x.classList.toggle("change");
+		}
+		</script>
+  </body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Design by Hannah Monk</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="hmm.ico" />
+	  <style>
+		.designFeatures {
+			   list-style-type: "⧉";
+		  }
+		  
+		  /* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prevRenderSlide, .nextRenderSlide {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: #882DFF;
+		  font-weight: bold;
+		  font-size: 50px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.nextRenderSlide {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		
+		.prevRenderSlide {
+			left: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		  
+		@media (min-width: 0px) {
+			#unityGame {
+				padding: 1em;
+				margin-bottom: 4em;
+			}
+			#startGame {
+				margin-bottom: 0em
+			}
+		   }
+
+		@media (min-width: 576px) {
+			#unityGame {
+				padding: 1em;
+				margin-bottom: 4em;
+			}
+			#startGame {
+				margin-bottom: 0em
+			}
+		}
+
+		@media (min-width: 768px) {
+			#unityGame {
+				padding: 1em;
+				margin-bottom: 1em;
+			}
+			#startGame {
+				margin-bottom: -.5em
+			}
+		}
+
+		@media (min-width: 992px) {
+			#unityGame {
+				padding: 2em;
+				margin-bottom: .5em;
+			}
+			#startGame {
+				margin: 1.5em 0 -1.5em 0
+			}
+		}
+
+		@media (min-width: 1200px) {
+			#unityGame {
+				padding: 4em;
+				margin-bottom: 0;
+			}
+			#startGame {
+				margin: 2em 0 -4.5em 0
+			}
+		}
+	  </style>
+	  
+  </head>
+  <body>
+	 <nav role="navigation">
+	  	<ul id="topNav" class="navLarge" aria-label="menu">
+		  <a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="Hannah Monk .me homepage"></a>
+		  <li><a href="index.html#aboutSec">About Me</a></li>
+		  <li><a href="index.html#resumeSec">Resume</a></li>
+		  <li><a href="index.html#contactSec">Contact</a></li>
+		  <li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true">Portfolio
+			  <span id="moveHam" aria-hidden="true">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </span>
+			  </a></span></li>
+		</ul>
+	  
+		<!-- Top Navigation Menu -->
+		<div class="hamnav container-lg">
+		  <div id="stripe"></div>
+		  <div id="portLinks">
+			<ul class="row text-center" aria-label="submenu">
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="videos.html">VIDEO ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="documentation.html">DOCUMENTATION</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="websites.html">WEB DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="digital_art.html">DIGITAL ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="game_design.html">GAME DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="ux_design.html">UX DESIGN</a></li>
+			</ul>
+		  </div>
+		</div>
+    </nav>
+	  <! –– name, top section ––>
+	  <div class="container-lg">
+	  <div class="row" id="topBackground" style="padding: 0 0 2em 0">
+		  <div class="col-12">
+			   <h1 class="ml1">
+				  <span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">Game Design</span>
+					<span class="line line2"></span>
+				  </span> 
+				</h1>
+			  <h3><span class="ml13">Unity Games</span> <span style="margin: .5em">&boxbox;</span> <span class="ml132">3D Game Elements</span> <span style="margin: .5em">&boxbox;</span> <span class="ml133">2D UI Elements</span></h3>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		  </div>  
+	  </div>
+	  </div>
+	  
+	  <div class="container">
+	  	<div class="row">
+			<div class="col-12">
+				<h3>Solar System Design Game</h3>
+				<h4 style="color: #888888; margin-bottom: 20px">3D game built in Unity3D with C#</h4>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4>Current Design Features</h4>
+				<ul class="designFeatures">
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planet Customizer with 20 planet bodies, customizable orbit paths and speed, optional moon addition, and 3 size options</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planet edit and planet destroy buttons</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planets get destroyed when they get to close to each other</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Front and top camera views</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Zoomable Camera</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Number of current active planets counter</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Number of total destroyed planets counter</span></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h4>Upcoming Design Features</h4>
+				<ul class="designFeatures">
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Design mode vs Challenge mode</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Multiple sun types/levels</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Score card between levels</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Error message explaining how a planet got destroyed</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Sprite animation and sound when a planet is destroyed</span></li>
+					<li style="color: #882DFF; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Loading screen</span></li>
+				</ul>
+				
+			</div>
+			<div class="col-12 text-center" id="startGame" style="color: #888888;">Press the "Front View" button under Camera View to access the planet menu. Press a plus button under the Planet Controler to add a planet.</div>
+			<div class="col-12">
+				<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://i.simmer.io/@hmmonk/solar-system-builder" class="embed-responsive-item" id="unityGame"></iframe>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  
+	  <div class="container">
+	  	<div class="row">
+			<div class="col-12"><h3>3D Game Elements</h3></div>
+			<div class="col-12"><h4 style="color: #888888; margin-bottom: 20px">Game Elements built in Cinema4D</h4></div>
+			<div class="row text-center">
+				<div class="col-12"><h4>Game Element Scene</h4></div>
+				<br>
+				<div class="col-12"> 
+				<div class="slideshow-container">
+					<div class="mySlides">
+					  <img src="images/3D/ex1.png" alt="0 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex2.png" alt="45 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex3.png" alt="90 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex4.png" alt="135 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex5.png" alt="180 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex6.png" alt="225 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex7.png" alt="270 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<div class="mySlides">
+					  <img src="images/3D/ex8.png" alt="315 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
+					</div>
+
+					<a class="prevRenderSlide" onclick="plusSlides(-1)" style="color: #882DFF">&#10094;</a>
+					<a class="nextRenderSlide" onclick="plusSlides(1)" style="color: #882DFF">&#10095;</a>
+
+					</div>
+				 </div>
+				<br>
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+			
+				<br>
+
+       
+        <div class="row text-center">
+		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Pirate Ship</h5><img class="img-thumbnail" alt="3d render of a metal ship ship"  src="images/3D/ship.png" style="width: 90%;"></div>
+		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Metal Man</h5><img class="img-thumbnail" alt="3d render of a small metal robot with clear marble as a head"  src="images/3D/man.png" style="width: 90%;"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Bosun's Whistle</h5><img class="img-thumbnail" alt="a 3d render of a golden metal bosun's whistle"  src="images/3D/whistle.png" style="width: 90%;"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Light Blub</h5><img class="img-thumbnail" alt="a 3d render of a light bulb"  src="images/3D/light.png" style="width: 90%;"></div>
+          <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Low Poly Grass</h5><img class="img-thumbnail" alt="a 3d render of several blades of low-poly grass"  src="images/3D/grass.png" style="width: 90%;"></div>
+		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Butterfly</h5><img class="img-thumbnail"  alt="a 3d render of a monarch butterfly sitting on a rock" src="images/3D/butterfly.png" style="width: 90%;"></div>
+        </div>
+		<br>
+	  </div>
+
+	</div>
+    </div>
+	
+	  <! –– Footer ––>
+     <footer class="container-lg">
+		   <div class="row">
+			   <div class="col-12" style="margin: 0 0 0em 0">
+				  <img class="wavy-line" src="images/waves.png" style="width:100%">
+				<div class="boatMove">
+				  <img src="images/boat.png" class="boat" alt="paper boat moving left and right" />
+				</div>
+				</div>
+			</div>
+		   <div class="row">
+			<div class="col-lg-3 col-md-12 col-sm-12">
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<br>
+				<h5>Connect with me on:</h5>
+					<ul class="social row">
+					<div class="col-6"><li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><img src="images/linked.png" style="width: 15%;" alt="">LinkedIn</a></li></div>
+					<div class="col-6"><li><a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ" target="_blank"><img src="images/youTube.png" style="width: 15%;" alt="">YouTube</a></li></div>
+					<div class="col-6"><li><a href="mailto:hannahmmonk@gmail.com" target="_blank"><img src="images/email.png" style="width: 15%" alt="">Email</a></li></div>
+					<div class="col-6"><li><a href="https://github.com/hmmonk999" target="_blank"><img src="images/GitHub-Mark.png" style="width: 15%;" alt="">GitHub</a></li></div>
+					</ul>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 1.5em">
+				<br>
+				<h5>Menu</h5>	
+				<a href="index.html#aboutSec" style="margin: 0 5px">About</a>
+				<a href="index.html#resumeSec" style="margin: 0 5px">Resume</a>
+				<a href="index.html#contactSec" style="margin: 0 5px">Contact</a>
+				<hr>
+				<p id="modify">Last Modified: <span id="modDate"></span></p>
+			</div>
+			    <div class="col-12" style="width: 100%; background-color: #0C151E; margin: 0;"><center><p>HannahMonk.me &copy; 2020 All Rights Reserved</p></center></div>
+			</div>
+  		  </footer>
+	  
+
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	  <script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+			  if($(window).scrollTop() >= 5) {
+				$("#topNav").animate({fontSize: "130%"}, { duration: 20, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 20, queue: false });
+				$("#topNav").animate({padding: ".2em"}, { duration: 20, queue: false });
+				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 20, queue: false });
+			  }
+			  
+			  if($(window).scrollTop() < 5) {
+				$("#topNav").animate({fontSize: "160%"}, { duration: 10, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 10, queue: false });
+				$("#topNav").animate({padding: ".75em"}, { duration: 10, queue: false });
+				$("#moveHam").animate({margin: "5px 0 0 8px"}, { duration: 10, queue: false });
+			  }
+		  });
+		});
+	  </script>
+	  
+	  <script>
+		var textWrapper = document.querySelector('.ml1 .letters');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  
+		   var textWrapper2 = document.querySelector('.ml13');
+		   var textWrapper3 = document.querySelector('.ml132');
+		  	var textWrapper4 = document.querySelector('.ml133');
+		  textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		   textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  	textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+			targets: '.ml1 .letter',
+			scale: [0.3,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 * (i+1)
+		  }).add({
+			targets: '.ml1 .line',
+			scaleX: [0,1],
+			opacity: [0.5,1],
+			easing: "easeOutExpo",
+			duration: 500,
+			offset: '-=875',
+			delay: (el, i, l) => 80 * (l - i)
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 0 + 30 * i
+		  }).add({
+			targets: '.ml132 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml133 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 200,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [-100,-100],
+			opacity: [1,1],
+			easing: "easeInExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  });
+	  </script>
+	   <script>
+	  var x = document.lastModified;
+	  document.getElementById("modDate").innerHTML = x;
+	  </script>
+	  <script>
+		function myFunction(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
+		  } else {
+			y.style.display = "block";
+		  }
+		}
+		</script>
+	    <script>
+		function changeIcon(x) {
+		  x.classList.toggle("change");
+		}
+		</script>
+  </body>
+</html>

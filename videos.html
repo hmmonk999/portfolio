@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video by Hannah Monk</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="hmm.ico" />
+	  <style>
+
+		#workVideos img {
+		  vertical-align: middle;
+		  padding: 15px 1px;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		#workVideos .cursor {
+		  cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		#workVideos .prev, #workVideos .next {
+		  cursor: pointer;
+		  position: absolute;
+		  width: auto;
+		  color: #444CAD;
+		  font-weight: bold;
+		  font-size: 50px;
+		  border-radius: 0 3px 3px 0;
+		}
+		  
+		  #workVideos button {
+			  padding: 0;
+			  margin: 0;
+			  background: none;
+			  border: none;
+		  }
+		    
+		.videoSlides {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.videoSlides:hover {
+		  opacity: 1;
+		}
+		  
+		@media (min-width: 0px) {
+			#workVideos .prev, #workVideos .next {
+			  font-size: 50px;
+			  margin-top: .5em;
+			}
+			  #workVideos .prev {
+				margin-left: .5em;  
+			  }
+		   }
+
+		@media (min-width: 576px) {
+			#workVideos .prev, #workVideos .next {
+			  font-size: 50px;
+			  margin-top: 1em;
+			}
+			  #workVideos .prev {
+				margin-left: .5em;  
+			  }
+		}
+
+		@media (min-width: 768px) {
+			#workVideos .prev, #workVideos .next {
+			  font-size: 50px;
+			  margin-top: 1.5em;
+			}
+			  #workVideos .prev {
+				margin-left: 1em;  
+			  }
+		}
+
+		@media (min-width: 992px) {
+			#workVideos .prev, #workVideos .next {
+			  font-size: 50px;
+			  margin-top: 1.5em;
+			}
+			  #workVideos .prev {
+				margin-left: 1em;  
+			  }
+		}
+
+		@media (min-width: 1200px) {
+			#workVideos .prev, #workVideos .next {
+			  font-size: 50px;
+			  margin-top: 2.5em;
+			}
+			  #workVideos .prev {
+				margin-left: 2.5em;  
+			  }
+		}
+</style>
+	  
+  </head>
+  <body>
+	 <nav role="navigation">
+	  	<ul id="topNav" class="navLarge" aria-label="menu">
+		  <a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="Hannah Monk .me homepage"></a>
+		  <li><a href="index.html#aboutSec">About Me</a></li>
+		  <li><a href="index.html#resumeSec">Resume</a></li>
+		  <li><a href="index.html#contactSec">Contact</a></li>
+		  <li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true">Portfolio
+			  <span id="moveHam" aria-hidden="true">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </span>
+			  </a></span></li>
+		</ul>
+	  
+		<!-- Top Navigation Menu -->
+		<div class="hamnav container-lg">
+		  <div id="stripe"></div>
+		  <div id="portLinks">
+			<ul class="row text-center" aria-label="submenu">
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="videos.html">VIDEO ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="documentation.html">DOCUMENTATION</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="websites.html">WEB DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="digital_art.html">DIGITAL ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="game_design.html">GAME DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="ux_design.html">UX DESIGN</a></li>
+			</ul>
+		  </div>
+		</div>
+    </nav>
+	  
+	  <! –– name, top section ––>
+	  <div class="container-lg">
+	  <div class="row" id="topBackground" style="padding: 0 0 2em 0">
+		  <div class="col-12">
+			   <h1 class="ml1">
+				  <span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">VIDEOS</span>
+					<span class="line line2"></span>
+				  </span> 
+				</h1>
+			  <h3><span class="ml13">Videography</span> <span style="margin: .5em">&boxbox;</span> <span class="ml132">Audio & Video Editing</span> <span style="margin: .5em">&boxbox;</span> <span class="ml133">2D Animation</span></h3>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		  </div>  
+	  </div>
+	  </div>
+	  <div class="container">
+		  <div class="row">
+		  	<div class="col-12"><h3 style="text-align:center">Iowa State University Alumni Interviews</h3></div>
+		  </div>
+		  
+
+<div id="workVideos" class="container">
+   <div class="row no-gutters">
+		<div class="col-md-6 col-lg-6 col-sm-12 no-gutters">
+			<div class="row no-gutters">
+			<div class="col-3">
+			  <button onclick="currentSlide(1)"><img class="videoSlides cursor" src="images/alumniInterviews/AbbyInterview.png" style="width:100%" role="button"></button>
+			</div>
+			<div class="col-3">
+			  <button onclick="currentSlide(2)"><img class="videoSlides cursor" src="images/alumniInterviews/WesleyInterview.png" style="width:100%" role="button"></button>
+			</div>
+			<div class="col-3">
+			  <button  onclick="currentSlide(3)"><img class="videoSlides cursor" src="images/alumniInterviews/RileyInterview.png" style="width:100%"></button>
+			</div>
+			<div class="col-3">
+			   <button onclick="currentSlide(4)"><img class="videoSlides cursor" src="images/alumniInterviews/MilesInterview.png" style="width:100%"></button>
+			</div>
+			</div>
+	  </div>
+
+		<div class="col-md-6 col-lg-6 col-sm-12 no-gutters">
+			<div class="row no-gutters">
+			<div class="col-3">
+			   <button onclick="currentSlide(5)"><img class="videoSlides cursor" src="images/alumniInterviews/MaryInterview.png" style="width:100%"></button>
+			</div>    
+			<div class="col-3">
+			   <button onclick="currentSlide(6)"><img class="videoSlides cursor" src="images/alumniInterviews/HaileyInterview.png" style="width:100%"></button>
+			</div>
+			<div class="col-3">
+			   <button onclick="currentSlide(7)"><img class="videoSlides cursor" src="images/alumniInterviews/LindseyInterview.png" style="width:100%"></button>
+			</div>
+			<div class="col-3">
+			   <button  onclick="currentSlide(8)"><img class="videoSlides cursor" src="images/alumniInterviews/KallieInterview.png" style="width:100%"></button>
+			</div>
+			</div>
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-2">
+			<a class="prev"  onclick="plusSlides(-1)">❮</a>
+		</div>
+		<div class="col-8">
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/dqi0Z7z045I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/_TQELwfRZz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/qHrOLR6E4k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/D_fWWTBZLP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/Vr2sONE-8TE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+		  <center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/SGgo4zZCvvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+			<center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/NF7LmbZcXCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+
+			<center><div class="mySlides" style="width: 100%">
+				<div class="embed-responsive embed-responsive-16by9"   onclick="myFunction(this);">
+			  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/OH6W0FkcJH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		  </div></center>
+			</div>
+			<div class="col-2">
+		 		<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+	</div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("videoSlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+	  </div>
+	  <div class="container">
+		  <div class="row">
+		  	<div class="col-12" style="margin-top: 4em"><h2>Other Projects</h2></div>
+		  </div>
+		  <div class="row" style="text-align: center">
+		  <div class="col-6">
+			  <h3 style="margin: 0; padding: 2px;">Mock Campaign Ad</h3>
+			  <center><div style="width: 100%; padding: 10px 5% 5% 5%">
+					<div class="embed-responsive embed-responsive-16by9">
+				  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/GqvX4XGRvyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div></center>
+			  </div>
+			  <div class="col-6">
+				<h3 style="margin: 0; padding: 2px;">Watching You: Filmed Video</h3>
+			  <center><div style="width: 100%; padding: 10px 5% 5% 5%">
+					<div class="embed-responsive embed-responsive-16by9">
+				  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/wXi6Xlopyjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div></center>
+		  </div>
+		   <div class="col-6">
+			   <h3 style="margin: 0; padding: 2px;">Birds: Animated Video</h3>
+			  <center><div style="width: 100%; padding: 10px 5% 5% 5%">
+					<div class="embed-responsive embed-responsive-16by9">
+				  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/M8xAVHUphgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div></center>
+			  </div>
+			  <div class="col-6">
+				  <h3 style="margin: 0; padding: 2px;">Step Cat Music Video</h3>
+			  <center><div style="width: 100%; padding: 10px 5% 5% 5%">
+					<div class="embed-responsive embed-responsive-16by9">
+				  <iframe style="width: 100%" class="embed-responsive-item" src="https://www.youtube.com/embed/Blbt8-G4cRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div></center>
+		  </div>
+	  </div>
+	  </div>
+	  
+	 
+	  
+
+
+	  
+	  <! –– Footer ––>
+	      <footer class="container-lg">
+		   <div class="row">
+			   <div class="col-12" style="margin: 0 0 0em 0">
+				  <img class="wavy-line" src="images/waves.png" style="width:100%">
+				<div class="boatMove">
+				  <img src="images/boat.png" class="boat" alt="paper boat moving left and right" />
+				</div>
+				</div>
+			</div>
+		   <div class="row">
+			<div class="col-lg-3 col-md-12 col-sm-12">
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<br>
+				<h5>Connect with me on:</h5>
+					<ul class="social row">
+					<div class="col-6"><li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><img src="images/linked.png" style="width: 15%;" alt="">LinkedIn</a></li></div>
+					<div class="col-6"><li><a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ" target="_blank"><img src="images/youTube.png" style="width: 15%;" alt="">YouTube</a></li></div>
+					<div class="col-6"><li><a href="mailto:hannahmmonk@gmail.com" target="_blank"><img src="images/email.png" style="width: 15%" alt="">Email</a></li></div>
+					<div class="col-6"><li><a href="https://github.com/hmmonk999" target="_blank"><img src="images/GitHub-Mark.png" style="width: 15%;" alt="">GitHub</a></li></div>
+					</ul>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 1.5em">
+				<br>
+				<h5>Menu</h5>	
+				<a href="index.html#aboutSec" style="margin: 0 5px">About</a>
+				<a href="index.html#resumeSec" style="margin: 0 5px">Resume</a>
+				<a href="index.html#contactSec" style="margin: 0 5px">Contact</a>
+				<hr>
+				<p id="modify">Last Modified: <span id="modDate"></span></p>
+			</div>
+			    <div class="col-12" style="width: 100%; background-color: #0C151E; margin: 0;"><center><p>HannahMonk.me &copy; 2020 All Rights Reserved</p></center></div>
+			</div>
+  		  </footer>
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	  
+	  <script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+			  if($(window).scrollTop() >= 5) {
+				$("#topNav").animate({fontSize: "130%"}, { duration: 20, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 20, queue: false });
+				$("#topNav").animate({padding: ".2em"}, { duration: 20, queue: false });
+				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 20, queue: false });
+			  }
+			  
+			  if($(window).scrollTop() < 5) {
+				$("#topNav").animate({fontSize: "160%"}, { duration: 10, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 10, queue: false });
+				$("#topNav").animate({padding: ".75em"}, { duration: 10, queue: false });
+				$("#moveHam").animate({margin: "5px 0 0 8px"}, { duration: 10, queue: false });
+			  }
+		  });
+		});
+	  </script>
+	  <script>
+		function myFunction(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
+		  } else {
+			y.style.display = "block";
+		  }
+		}
+		</script>
+	    <script>
+		function changeIcon(x) {
+		  x.classList.toggle("change");
+		}
+		</script>
+	  
+	  <script>
+		var textWrapper = document.querySelector('.ml1 .letters');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  
+		   var textWrapper2 = document.querySelector('.ml13');
+		   var textWrapper3 = document.querySelector('.ml132');
+		  	var textWrapper4 = document.querySelector('.ml133');
+		  textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		   textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  	textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+			targets: '.ml1 .letter',
+			scale: [0.3,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 * (i+1)
+		  }).add({
+			targets: '.ml1 .line',
+			scaleX: [0,1],
+			opacity: [0.5,1],
+			easing: "easeOutExpo",
+			duration: 500,
+			offset: '-=875',
+			delay: (el, i, l) => 80 * (l - i)
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 0 + 30 * i
+		  }).add({
+			targets: '.ml132 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml133 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 200,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [-100,-100],
+			opacity: [1,1],
+			easing: "easeInExpo",
+			duration: 100,
+			delay: (el, i) => 100 + 30 * i
+		  });
+	  </script>
+	   <script>
+	  var x = document.lastModified;
+	  document.getElementById("modDate").innerHTML = x;
+	  </script>
+  </body>
+</html>
