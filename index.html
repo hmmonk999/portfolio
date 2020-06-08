@@ -1,492 +1,840 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="shortcut icon" href="hmlogo.svg" type="image/x-icon"/>
     <title>Hannah Monk's Digital Portfolio</title>
-	 <script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function() {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.defer = true;
-        mf.src = "//cdn.mouseflow.com/projects/51421346-9e04-4c8f-8e62-2cdcb1d0fb17.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-</script>
-
-	  
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.2.1.css" rel="stylesheet">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="hmm.ico" />
 	  <style>
-				  .buttonContainer{
-				margin-top:50px;
-				text-align:center;
-			}
 
-			a.button{
-			  display:inline-block;
+/* Resume Parallax Image------------------------------------------------------------------------------*/
+.slide {
+  position: relative;
+  padding: 22vh 10%;
+  box-sizing: border-box;
+  perspective: 1px !important;	
+}
 
-				font:normal normal 300 1.3em 'Open Sans';
-				text-decoration:none;	
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em;
+}
 
-				color: #111044;
-				brackground-color:transparent;
-				border:1px solid  #111044;
-
-				padding: .3em 1.2em;
-				margin:5px;
-
-				background-size: 200% 100%;	
-				background-image: linear-gradient(to right, transparent 50%,  #111044 50%);
-				transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
-			}
-
-			a.button:hover{
-				color:rgba(255, 255, 255, 1);
-				background-color: #111044;
-				background-position: -100% 100%;
-			}
+#slide1:before {
+  background-image: url(resume.png);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: 50% 50%;
+  background-size: 100%; /* Resize the background image to cover the entire container */
+  transform: translateZ(-1px) scale(2);
+}
+	
+#slide1 {
+	z-index: -1;
+}
 		  
-		  .slide-nav-3{
-			padding-right: 20px;  
-			color: white;
-
-			} 
-
-			.uk-dotnav > * >* {
-			width: 250%;
-			height:250%;
-			border: 1.5px solid     rgba(255,255,255,.7);
-
-			}
-			.uk-dotnav > .uk-active > * {
-			  background-color:white;
-			}
+.snip1477 button {
+	padding: none;
+	background: transparent;
+	border: none;
+}
 		  
-		  .mySlides {display:none;}
-		 	  
+.work button {
+	border: none;
+	padding: 3px;
+	text-align: left;
+	margin: 0;
+	background: transparent;
+}
+.experienceDetails {
+	background-color: #F6F6F6;
+	padding: 15px;
+}
+.goAway {
+	display: none;
+}
+		  
+.activeJob {
+	background-color: #F6F6F6 !important; 
+	border: thin solid #888 !important;
+	color: #882DFF;
+}
+		 
+/*-------------------------------------------------------------------------*/
 	  </style>
+
   </head>
-
-<body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9FL7DQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	<div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-5 col-sm-12">
-			<div class="row">
-				<div class="col-5"><img src="hmlogo.png" style="width: 100%" alt="Hannah's logo of a fountain pen that looks like a light house with water a small paper boat"></div>
-			</div>
-			<div class="row">
-				
-				<div class="col-12 text-center">
-				<br><br>
-				<h1>Hi. I'm Hannah Monk!</h1>
-				</div>
-				
-				<div class="col-12 text-center">
-				<h5>I'm a senior at Iowa State majoring in technical communication and minoring in digital media.</h5>
-				</div>
-				
-				<div class="col-12">
-				<br>
-				<h6 class="text-center">To learn more about me, scroll down.<br>
-					To look at my work, click the link to my portfolio.</h6>
-				</div>
-				<div class="col-12 buttonContainer">
-					<a href="websites.html" class="button"><h5>Go to my portfolio &#x2192;</h5></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-lg-6 col-md-7 col-sm-1" style="background: #FBB03B">
-			<div class="row" id="sideButtonsIndex">
-				<div class="col-8">
-<!--					<img src="images/hannahBoat.JPG" style="max-width: 156%; margin-top: 1.5em">-->
-					
-				<div class="w3-content w3-section" style="max-width:500px">
-				  <img class="mySlides" src="images/hannahBoat.JPG" style="width: 156%; margin-top: 1.5em">
-				  <img class="mySlides" src="images/folley.png" style="width: 156%; margin-top: 1.5em">
-				  <img class="mySlides" src="images/hannahRome .JPG" style="width: 156%; margin-top: 1.5em">
-				  <img class="mySlides" src="images/han.jpg" style="width: 156%; margin-top: 1.5em">
-				</div>
-					
-
-				</div>
-				<div class="col-4">
-					<ul style="text-align: right; position: fixed; z-index: 100;">
-						<a href="websites.html"><li><span id="noText1"><strong>Portfolio</strong></span><img src="icons/port.png" alt="portfolio icon" class="imageGrow imageSmol" id="imageNav1"></li></a>
-						<a href="#aboutSec"><li><span id="noText2"><strong>About Me</strong></span><img src="icons/aboutMe.png" alt="about me icon" class="imageGrow imageSmol" id="imageNav2"></li></a>
-						<a href="#resumeSec"><li><span id="noText3"><strong>Resume</strong></span><img src="icons/resume.png" alt="resume icon" class="imageGrow imageSmol" id="imageNav3"></li></a>
-						<a href="#skillsSec"><li><span id="noText4"><strong>Skills</strong></span><img src="icons/skills.png" alt="skills icon"class="imageGrow imageSmol" id="imageNav4"></li></a>
-						<a href="#contactSec"><li><span id="noText5"><strong>Contact</strong></span><img src="icons/contact.png" alt="contact icon" class="imageGrow imageSmol" id="imageNav5"></li></a>
-					</ul>
-				</div>
-			
-			</div>
-		</div>
-	</div>
-	</div>
-	
-	<! –– //about me ----------------------------------------------------------------------------------//––>
-	<div class="container">
-		<div class="col-12">
-			<br><br>
-			<center><h1 id="aboutSec">About Me</h1></center>
-			<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-8"><img src="icons/gradme.png" alt="a minimalist graphic of Hannah in a graduation cap and gown" style="width: 85%; align-content: center"></div>
-					<div class="col-lg-7 col-md-7 col-sm-12">
-						<br><hr>
-						<h4>Currently</h4>
-						<p>I am in my last semester of college. I will graduate May 7. While I am currently working for the English department as a video editor and the mechanical engineering department as an instructional designer, they are part time jobs for students. After I graduate I would like to work as a user experience designer or a multimedia specialist. If those don't work out, the dream job I've had since I was 2 is to be a pirate.</p>
-
-						<hr>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-lg-7 col-md-7 col-sm-12">
-						<br><hr>
-						<h4>In College</h4>
-						<p>I started off as an English Education major because I like writing and teaching, but quickly switched to technical communication because it combined writing and design. I love the creative and analytical aspects of my major. My core classes are in rhetoric, but I also get to learn about programming, digital media, writing and editing, and human-computer interaction.</p>
-						<p>I'm kept pretty busy between doing homework, being the president for the Society for Technical Communication and the outreach chair for the web development club, but in my free time I edit videos for the English department and I am learning to prefect my waffle making skills.</p>
-						<hr>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-8"><img src="icons/collegeme.png" style="width: 85%;" alt="A minimalist graphic of Hannah drinking coffee with her laptop which has laptop stickers with the STC logo and the web dev club logo"></div>
-				</div>
-			<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-8"><img src="icons/softballme.png" style="width: 85%; align-content: center" alt="A minimalist graphic of Hannah throwing a softball in catcher's gear"></div>
-					<div class="col-lg-7 col-md-7 col-sm-12">
-						<hr>
-						<h4>Growing Up</h4>
-						<p>I grew up in a small town just outside of Champaign, Illinois.</p>
-						<p>I played travel softball for 10 years. Becuase of this I learned how to be competitive, work well on a team, and manage my time.</p>
-						<p>For a few years I was also the speaker for an engineering club that presented a Rube Goldberg machine at the University of Illinois Engineering Week. I gave speeches explaing our machine to people ranging from the engineering professors to five year olds exploring with their grandparents. This taught me how to speak well in public and cater information to my audience.</p>
-						<hr>
-					</div>
-				</div>
-				
-		</div>
-	</div>
-	<hr><hr><hr>
-	<! –– //resume ------------------------------------------------------------------------------------//––>
-	<div class="container">
-		<h1 id="resumeSec">Resume</h1>
-		<u><a href="documents/HannahMonkResume.pdf" target="_blank">Download my resume</a></u>
-	<div class="col-11">
-	<div class="row text-center">
-			<div class="col-lg-6 col-md-6 col-sm-12"><div class="img-thumbnail" style="margin-top: 1em"> 
-				<div class="row">
-					<div class="col-4">
-						<img src="icons/meDepartment.jpg" alt="Iowa State Mechanical Engineering department icon" style=" width: 100%;">
-					</div>
-					<div class="col-8">
-						<h4 style="color: #F7A132">Instructional Designer</h4>
-						<h5  style="font-size: 100%;">Mechanical Engineering Department<br>Iowa State University</h5>
-						<h5 style="font-size: 85%">Janurary 2020 - Present</h5>
-						<hr>
-					</div>
-				</div></div></div>
-		
-		<div class="col-lg-6 col-md-6 col-sm-12"><div class="img-thumbnail" style="margin-top: 1em"> 
-				<div class="row">
-					<div class="col-4">
-						<img src="icons/englishDepartment.jpg" alt="Iowa State English department icon" style=" width: 100%;">
-					</div>
-					<div class="col-8">
-						<h4 style="color: #F7A132">Video Editor</h4>
-						<h5  style="font-size: 100%;">English Department<br>Iowa State University</h5>
-						<h5 style="font-size: 85%">October 2019 - Present</h5>
-						<hr>
-						<a href="videoEditor.html" style="margin: 0"><u>Click here to learn more about this position</u></a>
-				</div></div></div>
-	</div>
-	</div>
-		
-			<div class="row text-center">
-			<div class="col-lg-6 col-md-6 col-sm-12"><div class="img-thumbnail" style="margin-top: 1em"> 
-				<div class="row">
-					<div class="col-4">
-						<img src="icons/dot.jpg" alt="Iowa DOT logo" style=" width: 100%;">
-					</div>
-					<div class="col-8">
-						<h4 style="color: #F7A132">Web Design Intern</h4>
-						<h5  style="font-size: 100%;">Strategic Communication Department<br>Iowa Department of Transportation</h5>
-						<h5 style="font-size: 85%">Janurary 2020 - Present</h5>
-						<hr>
-						<a href="DOT.html" style="margin: 0"><u>Click here to learn more about this position</u></a>
-					</div>
-				</div></div></div>
-		
-		<div class="col-lg-6 col-md-6 col-sm-12"><div class="img-thumbnail" style="margin-top: 1em"> 
-				<div class="row">
-					<div class="col-4">
-						<img src="icons/leepfrog.jpeg" alt="Leepfrog technologies logo" style=" width: 100%;">
-					</div>
-					<div class="col-8">
-						<h4 style="color: #F7A132">Client Services Intern</h4>
-						<h5  style="font-size: 100%;">Implementation Department<br>Leepfrog Technologies</h5>
-						<h5 style="font-size: 85%">October 2019 - Present</h5>
-						<hr>
-						<a href="leepfrog.html" style="margin: 0"><u>Click here to learn more about this position</u></a>
-				</div></div></div>
-	</div>
-	</div>
-	</div>
-	</div>
-	<! –– //skills ------------------------------------------------------------------------------------//––>
-	
-	<div class="container">
-	<div class="col-11">
-	<div class="row">
-		<div class="col-12"><hr><h1 id="skillsSec">Skills</h1></div>
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4>Design</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 52%">Adobe Photoshop</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%">Adobe Illustrator</div>
-          </div>	
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 65%">Drawing</div>
-          </div>
-	   </div>
-		
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4>Motion Design</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 82%; background: #111044">Adobe AfterEffects</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background: #111044">Adobe Premiere</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background: #111044">Adobe Audition</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%; background: #111044">Cinema 4D</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background: #111044">Unity 3D</div>
-          </div>
-	    </div>
-		
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4>Writing</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">Technical Writing</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 80%">Editing</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%">Document Design/Layout</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 70%">Adobe InDesign</div>
-          </div>
-	    </div>
-	
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4 style="margin: 25px 0 0 0">UX</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background: #111044">Adobe XD</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%; background: #111044">Google Analytics</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 25%; background: #111044">Prototying</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 80%; background: #111044">User Stories</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 15%; background: #111044">Quantative Research Methods</div>
-          </div>
-	    </div>
-		
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4 style="margin: 25px 0 0 0">Front-end Development</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">Bootstrap</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 76%">Content Management Systems</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%">HTML/CSS</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 30%">JavaScript</div>
-          </div>
-	    </div>
-		
-		<div class="col-lg-4 col-md-6 col-sm-12"><h4 style="margin: 25px 0 0 0">Back-end Development</h4>
-			<i><p style="text-align: left; color: #BCBCBC; margin: 0 0 -20px 0">Novice<span style="float: right;">Advanced</span></p></i>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 23%; background: #111044">Java</div>
-          </div>
-		  <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 12%; background: #111044">Python</div>
-          </div>
-	</div>
- </div>
-		
-	</div>
-	</div>
-	<hr><hr><hr>
-	<! –– //contact ---------------------------------------------------------------------------------------//––>
-	<div class="container" id="contactSec"> 
-		<h1>Contact</h1>
-		<p>Connect with me on...</p>
-	<div class="row text-center">
-		<div class="col-lg-3 col-md-3 col-sm-6">
-			<a href="mailto:hannahmmonk@gmail.com">
-			<img src="icons/email.png" alt="email icon" style="width: 30%">
-			<h6 style="margin-top: 20px">Email</h6>
-			<center>hannahmmonk@gmail.com</center>
-			</a>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6">
-			<a href="https://www.linkedin.com/in/hannah-monk-0323b8142/">
-			<img src="icons/linked.png" alt="LinkedIn icon" style="width: 30%">
-			<h6 style="margin-top: 20px">LinkedIn</h6>
-			<center>My LinkedIn Profile</center>
-			</a>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6">
-			<a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ">
-			<img src="icons/youTube.png" alt="YouTube icon" style="width: 30%">
-			<h6 style="margin-top: 20px">YouTube</h6>
-			<center>My YouTube Channel</center>
-			</a>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6">
-			<a href="https://github.com/hmmonk999" target="_blank">
-			<img src="icons/GitHub-Mark.png" alt="Github icon" style="width: 30%">
-			<h6 style="margin-top: 20px">Github</h6>
-			<center>My Github Account</center>
-			</a>	
-		</div>
-		<br><br><br>
-	</div>
-	</div>
-		 <footer class="row" style ="margin-top: 3em ">
-			<div class="col-12"><img class="wavy-line" alt="blue waves that move up and down" src="waves.png" style="width:100%"></div>
-			 <div class="bottomNav col-5"><br><br><br></div>
-			 <div class="bottomNav col-3">
-				<div class="boatMove">
-				  <img src="boat.png" alt="paper boat that moves left and right" class="boat"/>
-				</div>
-			</div>
-			 <div class="bottomNav col-4"><br><br><br></div>
-  		  </footer>
-		
-	<center><nav class="navSticky">
-		<div class="row text-center">
-			<span style="width: 20%"><a class="active" href="index.html#aboutSec"><img src="icons/aboutSmol.png" alt="about me icon" style="width: 70%; margin:.5px"><br>About</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#resumeSec"><img src="icons/resSmol.png" alt="resume icon" style="width: 70%; margin: .5px"><br>Resume</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#skillsSec"><img src="icons/skillsSmol.png" alt="skills icon" style="width: 70%; margin: .5px"><br>Skills</a></span>
-			<span style="width: 20%"><a class="active" href="index.html#contactSec"><img src="icons/contSmol.png" alt="contact information icon" style="width: 70%; margin: .5px"><br>Contact</a></span>
-			<span style="width: 20%"><a class="active" href="#" onclick="openNav()"><img src="icons/protSmol.png" alt="design portfolio icon" style="width: 70%; margin: .5px"><br>Portfolio</a></span>
-		</div>
-	</nav></center>
+  <body>
+	  <!--TOP Navigation ------------------------------------------------------------------------------>
+	 <nav role="navigation">
+	  	<ul id="topNav" class="navLarge" aria-label="menu">
+		  <a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="Hannah Monk .me homepage"></a>
+		  <li><a href="index.html#aboutSec">About Me</a></li>
+		  <li><a href="index.html#resumeSec">Resume</a></li>
+		  <li><a href="index.html#contactSec">Contact</a></li>
+		  <li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true">Portfolio
+			  <span id="moveHam" aria-hidden="true">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </span>
+			  </a></span></li>
+		</ul>
 	  
-<div id="myNav" class="overlayMobileNav">
-  <a href="javascript:void(0)" class="closeMobileNav" onclick="closeNav()">&times;</a>
-  <div class="overlayMobileNav-content">
-    	<h4 style="margin-top: 15px;">Project Portfolio</h4>
-			<a href="websites.html">Websites</a>
-			<a href="prototypes.html">Prototypes</a>
-			<a href="videos.html">Videos</a>
-			<a href="renderings.html">3D Renderings</a>
-			<a href="digital.html">Digital Art</a>
-			<a href="doc.html">Documentation</a>
-			
-		<br>
-		<h4>Work Experience</h4>
-			<a href ="videoEditor.html">Video Editor</a>
-	  		<a href="DOT.html">Web Design Internship</a>
-			<a href="leepfrog.html">Client Services Internship</a>
+		<!-- Top Navigation Menu -->
+		<div class="hamnav container-lg">
+		  <div id="stripe"></div>
+		  <div id="portLinks">
+			<ul class="row text-center" aria-label="submenu">
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="videos.html">VIDEO ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="documentation.html">DOCUMENTATION</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="websites.html">WEB DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="digital_art.html">DIGITAL ART</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="game_design.html">GAME DESIGN</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-12"><a href="ux_design.html">UX DESIGN</a></li>
+			</ul>
+		  </div>
+		</div>
+    </nav>
+	 <!--Name, tags, video HEADERS------------------------------------------------------------------------------>
+	  <div class="container-lg">
+	  <div class="row" id="topBackground">
+		
+		  <div class="col-lg-6 col-md-7 col-sm-12">
+			  <img src="images/hannahSquares.png" style="width: 30%">
+			   <h1 class="ml1">
+				  <span class="text-wrapper">
+					<span class="line line1"></span>
+					<span class="letters">Hannah Monk</span>
+					<span class="line line2"></span>
+				  </span> 
+				</h1>
+			  <h3><span class="ml13"> Video Editor</span> <span style="margin: .5em">&boxbox;</span> <span class="ml132">Web Designer</span> <span style="margin: .5em">&boxbox;</span> <span class="ml133">Writer</span></h3>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		  </div>
+		  <div class="col-lg-6 col-md-5 col-sm-12 embed-responsive embed-responsive-16by9">
+			  <video autoplay loop muted  class="embed-responsive-item">
+				<source type="video/webm" src="workflow.mp4">
+				</video>
+		  </div>
+		  
+	  </div>
+	  </div>
+   
+	<!--Portfolio Section ------------------------------------------------------------------------------>	  
+	    <div class="container portSec">
+		  <div class="row">
+			  <div class="col-12">
+			  		<h2>Portfolio</h2>
+			  </div>
+			  	<div class="col-lg-4 col-md-6 col-sm-12"><a href="videos.html">
+			  	  <figure class="snip1477 portIncomingRight" style="width: 100%; margin: 0; padding:1em 0">
+					  <img src="SVG/video.svg" style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>Video Art</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>Videography<br>Video/Audio Editing<br>Animation</p>
+					  </figcaption>
+					</figure>
+					</a></div>
+			   <div class="col-lg-4 col-md-6 col-sm-12"><a href="documentation.html">
+			   <figure class="snip1477 portIncomingRight" style="width: 100%; margin: 0; padding:1em 0">
+					  <img src="SVG/writing.svg" style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>Documentation</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>Technical Writing<br>Research Papers<br>Document Design<br>Print Media</p>
+					  </figcaption>
+					</figure>
+			  	</a></div>
+			  <div class="col-lg-4 col-md-6 col-sm-12"><a href="websites.html">
+			   <figure class="snip1477 portIncomingRight" style="width: 100%; margin: 0; padding:1em 0">
+					  <img src="SVG/web_1.svg" style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>Web Design</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>Responsive, Bootstrap Websites<br>WordPress Websites<br>DNN CMS Websites</p>
+					  </figcaption>
+					</figure>
+			  </a></div>
+			  <div class="col-lg-4 col-md-6 col-sm-12"><a href="digital_art.html">
+			     <figure class="snip1477 portIncomingLeft" style="width: 100%; margin: 0; padding:1em 0">
+					  <img src="SVG/art.svg"  style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>Digital Art</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>Logos<br>Vector Art<br>Image Manipulation</p>
+					  </figcaption>
+					</figure>
+			  </a></div>
+			  <div class="col-lg-4 col-md-6 col-sm-12"><a href="game_design.html">
+			     <figure class="snip1477 portIncomingLeft" style="width: 100%; margin: 0; padding:1em 0">
+					  <img src="SVG/game.svg" style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>Game Design</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>3D Unity Games<br>Cinema4D 3D Assets</p>
+					  </figcaption>
+					</figure>
+				  </a></div>
+			  <div class="col-lg-4 col-md-6 col-sm-12"><a href="ux_design.html">
+			   <figure class="snip1477 portIncomingLeft" style="width: 100%; margin: 0; padding: 1em 0">
+					  <img src="SVG/research.svg" style="width: 100%; margin: 0; padding: 0"/>
+					  <div class="title">
+						<div>
+						  <h4>UX Design</h4>
+						</div>
+					  </div>
+					  <figcaption>
+						<p>Prototypes<br>UX Testing<br>Accessibility Testing<br>Google Analytics Reports</p>
+					  </figcaption>
+					</figure>
+			  </a></div>
+	
+		  </div>
+	  </div>
+	 
+	  
+	  
+	 
+	
+<!--About Me ------------------------------------------------------------------------------>
+	<div class="container-lg">
+	  <div class="row" id="aboutBackground">
+		  <div class="col-12">
+			  <center><h2 id="aboutSec">About Me</h2></center>
+		  </div>
+		  <div class="col-lg-4 col-md-12 col-sm-12">
+			  <div class="row">
+				  <div class="col-lg-12 col-md-6 col-sm-12 aboutImg"><center><img src="images/gradme.png" id="gradImage"></center></div>
+				  <div class="col-lg-12 col-md-6 col-sm-12"><h3>Currently</h3><hr>
+				 <p><strong style="color: #000">I'm Hannah Monk!</strong> I'm a graduate from Iowa State University (and "Zoom University" because of the 2020 Pandemic). I'm a multimedia specialist with experience in: <ul><strong><li style="padding-left: 15px;">web design</li><li style="padding-left: 15px;">document design</li><li style="padding-left: 15px;">writing</li><li style="padding-left: 15px;">video editing</li></strong></ul>My dream job is to be a user experience designer or a multimedia specalist. My favorite part about designing content is making it easily usable for all people! If UX doesn't work out, the job I've wanted since I was 2 is to be a pirate. <img src="images/boat.png" alt="paper boat" style="width: 9%"></p>
+				  <hr id="pSeparator">
+			  </div>
+		  </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 col-sm-12">
+			  <div class="row">
+				  <div class="col-12 aboutImg"><center><img src="images/collegeme.png" id="collegeImage"></center></div>
+				  <div class="col-12"><h3>In College</h3><hr></div>
+				 <div class="col-12"><p>I started off as an English Education major because I like writing and explaining difficult concepts, but quickly switched to technical communication. Technical communication combines audience analysis, writing, design, and computer science. I love the <strong style="color: #000">creative</strong> and <strong style="color: #000">analytical</strong> aspects of my major.
+				<br><br>
+				
+				I learned all about <strong style="color: #000">time management</strong> and <strong style="color: #000">communication</strong> by having several jobs, taking an average of 17 credits, and having leadership roles in two clubs:
+					 <ul><strong>
+					 <li style="padding-left: 15px;">President of the Society for Technical Communication</li>
+					 <li style="padding-left: 15px;">Marketing Managers for the Web Development Club</li>
+					 </strong></ul>
+				I also learned to prefect my waffle making skills.<img src="images/waffle.png" alt="paper boat" style="width: 9%; padding-left: 15px;"></p></div>
+			  </div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 col-sm-12">
+			  <div class="row">
+				  <div class="col-12 aboutImg"><center><img src="images/softballme.png" id="sofballImage"></center></div>
+				  <div class="col-12"><h3>Growing Up</h3><hr></div>
+				<div class="col-12"><p>I grew up in a small town just outside of Champaign, Illinois.<br><br>
+					
+				Even when I was young, I enjoyed solving problems and explaining information in a way that best fits my audience. I honed this skill when I was a speaker at a University of Illinois engineering competition 3 years in a row. I had to speak differently to the engineering professors than I would to the five year olds with their grandparents. This is where my passion for <span style="color: #000; font-weight: bold">audience analysis</span> and <span style="color: #000; font-weight: bold">rhetoric</span> began.<br><br>
+				
+				I played travel softball for 10 years. Because of this, I gained <span style="color: #000; font-weight: bold">teamwork</span> skills and the power of being <span style="color: #000; font-weight: bold">hard working</span>. <img src="images/softball.png" alt="paper boat" style="width: 6%; padding-left: 5px;">
+				</p></div>
+				</div>
+		  </div>
+		</div>
 	</div>
-</div>  
-	  <script>
-		function openNav() {
-		  document.getElementById("myNav").style.height = "100%";
+
+<!--Resume ------------------------------------------------------------------------------>
+		<div style="width: 100%; background-color: white"> 
+		<div class="container">
+			 <div class="row">
+				<div class="col-12"><hr><center><h2 id="resumeSec">Resume</h2></center></div>
+				<div class="col-12 buttonContainer">
+					<a href="Hannah_Monk_Resume.pdf" target="_blank" class="button"><h5>Download My Resume &#x2192;</h5></a><hr>
+				</div>
+			  	<div class="experience col-lg-7 col-md-6 col-sm-12">
+					 <div class="resume">
+						<div class="func">
+						  <div class="work">
+							<h4 style="margin: 0 0 5px 10px">Education</h4>
+							<ul>
+								<li><span><strong>Iowa State University</strong><br>Major: Technical Communication<br>Minor: Digital Media</span><small>August 2016 - May 2020</small></li>
+								<h4 style="margin: 45px 0 2px 70px">Jobs</h4><p style="margin: 0px 0 9px 70px; color: #6C6C6C"><i>Click on a job to learn more</i></p>
+								<li stye="padding-bottom: 2em"><ul>
+									<li><button onclick="currentSlide(1)" role="button" class="job"><span><strong>Video Editor</strong><br>Iowa State University | English Department</span><small>September 2019 - April 2020</small></button></li>
+									<li><button onclick="currentSlide(2)" role="button" class="job"><span><strong>Instructional Designer</strong><br>Iowa State University | Mechanical Engineering Department</span><small>Janurary 2020 - March 2020</small></button></li>
+									<li><button onclick="currentSlide(3)" role="button" class="job"><span><strong>Web Design Intern</strong><br>Iowa Department of Transportation</span><small>May 2019 - September 2019</small></button></li>
+									<li><button onclick="currentSlide(4)" role="button" class="job"><span><strong>Logo Designer</strong><br>CyBite</span><small>October 2018</small></button></li>
+									<li><button onclick="currentSlide(5)" role="button" class="job"><span><strong>Client Service Intern</strong><br>Leepfrog Technologies | Implementation Team</span><small>May 2018 - August 2018</small></button></li>
+								</ul></li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+			  	</div>
+				<div class="col-lg-5 col-md-6 col-sm-12">
+					<div class="experienceDetails mySlides">
+						<h4>Video Editor | Iowa State University</h4>
+						<p>September 2019 - April 2020</p>
+						<h5>Major Projects</h5><hr>
+						<p>1. Edited raw footage of alumni interview videos for the LAS College YouTube channel and recruitment events.<br><a href="videos.html"><u>Watch the videos &#x2192;</u></a></p><br>
+						<h5>Programs Used</h5>
+						  <hr>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Adobe Audition</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Adobe Premiere</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Adobe AfterEffects</div>
+						  </div>
+						 <br>
+						<p style="color:#888888">* These bars are based on the number of days I used a program compared to the number of days total days I worked.</p>
+						<hr>
+					</div>
+					<div class="experienceDetails mySlides">
+						<h4>Instructional Designer | Iowa State University</h4>
+						<p>Janurary 2020 - March 2020</p>
+						<h5>Major Projects</h5><hr>
+						<p>1. Created a PowerPoint and documentation for sophomore level engineering students explaining best PowerPoint design and presentation tactics.<br><br>
+						2. Edited two assignment instructions for clarity, content, and grammar.</p><br>
+						<h5>Programs Used</h5>
+						  <hr>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Microsoft Word</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Microsoft PowerPoint</div>
+						  </div>
+						 <br>
+						<p style="color:#888888">* These bars are based on the number of days I used a program compared to the number of days total days I worked.</p>
+						<hr>
+					</div>
+					<div class="experienceDetails mySlides">
+						<h4>Web Design Intern | Iowa Department of Transportation</h4>
+						<p>May 2019 - September 2019</p>
+						<h5>Major Projects</h5><hr>
+						<p>1. Weekly meetings with the Research Department to create a prototype of a new design for their webpages<br><a href="websites.html"><u>View the Prototype &#x2192;</u></a><br><br>
+						2. Implement the prototype design with HTML, CSS, and JavaScript on the DNN Content Management System<br><a href="https://iowadot.gov/research"><u>Visit the Website &#x2192;</u></a><br><br>
+						3. Design a brochure for the Bureau of Investigation to be used a career fairs<br><a href="documentation.html"><u>View the Brochure</u></a><br><br>
+						4. Edit the Iowa Driver's Permit Manual for grammar, content, and cohesion.<br><br>
+						5. Suggest changes to the entire DOT website based on Google Analytics, a user survey, and a site map of the current structure of the website.</p><br>
+						<h5>Programs Used</h5>
+							  <hr>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">Adobe XD</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">DotNetNuke Content Management System</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">Google Analytics</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">HTML</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">CSS</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">Adobe Illustrator</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">JavaScript</div>
+							  </div>
+							  <div class="progress mt-4">
+								<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">DreamWeaver</div>
+							  </div>
+							<p style="color:#888888">* These bars are based on the number of days I used a program compared to the number of days total days I worked.</p>
+							<hr>
+					</div>
+					<div class="experienceDetails mySlides">
+						<h4>Logo Designer | CyBite</h4>
+						<p>October 2018</p>
+						<h5>Major Projects</h5><hr>
+						<p>1. Designed a logo for app (CyBite) for finding food around the Iowa State Campus.<br><a href="digital_art.html"><u>View the logo &#x2192;</u></a></p><br>
+						<h5>Programs Used</h5>
+						  <hr>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Adobe Illustrator</div>
+						  </div>
+						 <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Adobe Photoshop</div>
+						  </div>
+						 <br>
+						<p style="color:#888888">* These bars are based on the number of days I used a program compared to the number of days total days I worked.</p>
+						<hr>
+					</div>
+					<div class="experienceDetails mySlides">
+						<h4>Client Service Intern | Leepfrog Technologies</h4>
+						<p>May 2018 - August 2018</p>
+						<h5>Major Projects</h5><hr>
+						<p>1. Created documentation for external clients explaining the transition process from implementation to support.<br><br>
+						2. Edited and redesigned documentation for new clients explaining the beginning of the implementation process.<br><br>
+						3. Analyzed data of implementation phases time length to create a more accurate timeline calculator for clients.<br><br>
+						4. Reorganized the information architecture for parts of the internal website so new or transiting team members would have an easier time learning about the teams products.
+						</p><br>
+						  <h5>Programs Used</h5>
+						  <hr>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%">Microsoft Word</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%">Home-grown Content Management System</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%">Excel</div>
+						  </div>
+						  <div class="progress mt-4">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%">HTML/CSS</div>
+						  </div>
+
+						<p style="color:#888888">* These bars are based on the number of days I used a program compared to the number of days total days I worked.</p>
+						<hr>
+					   </div>
+				</div>
+		  </div>
+	  </div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
 		}
 
-		function closeNav() {
-		  document.getElementById("myNav").style.height = "0%";
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("job");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" activeJob", "");
+		  }		  
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " activeJob";
 		}
-	  </script>
+</script>
+    
+	  
+<!--Skills ------------------------------------------------------------------------------>
+	  <div class="container">
+	  	 <div class="row">
+			 <div class="col-12"><h2>Skills</h2></div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>Still Design</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="50%">
+					<div class="skillbar-title"><span>Adobe Photoshop</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">2.5 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Adobe Illustrator</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="40%">
+					<div class="skillbar-title"><span>Photography</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">2 yrs</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="100%">
+					<div class="skillbar-title"><span>Drawing</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">5 yrs</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>Motion Design</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Adobe Premiere</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Adobe AfterEffects</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="40%">
+					<div class="skillbar-title"><span>Adobe Audition</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">2.5 yrs</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="20%">
+					<div class="skillbar-title"><span>Cinema4D</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">1 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="10%">
+					<div class="skillbar-title"><span>Unity 3D</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.5 yr</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>Writing</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title"><span>Technical Writing</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">4 yrs</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="20%">
+					<div class="skillbar-title"><span>Blog Writing</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">1 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="100%">
+					<div class="skillbar-title"><span>Editing</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">5 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="70%">
+					<div class="skillbar-title"><span>Document Design</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">3.5 yrs</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>Adobe InDesign</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>User Experience</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="30%">
+					<div class="skillbar-title"><span>Adobe XD</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">2 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="30%">
+					<div class="skillbar-title"><span>Prototyping</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">2 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="20%">
+					<div class="skillbar-title"><span>User Stories</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">1 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="15%">
+					<div class="skillbar-title"><span>Google Analytics</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.75 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="10%">
+					<div class="skillbar-title"><span>Qualitative Research</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.5 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="10%">
+					<div class="skillbar-title"><span>Quantitative Research</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.5 yr</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>Front End Development</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>HTML</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>CSS</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">3 yrs</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="20%">
+					<div class="skillbar-title"><span>Bootstrap</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">1 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="20%">
+					<div class="skillbar-title"><span>JavaScript</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">1 yr</div>
+				</div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="5%">
+					<div class="skillbar-title"><span>jQuery</span></div>
+					<div class="skillbar-bar" style="background: #B371FF"></div>
+					<div class="skill-bar-percent">.25 yr</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+			 <div class="col-lg-4 col-md-6 col-sm-12">
+				 <div class="col-12">
+					 <h4>Back End Development</h4>
+				 </div>
+			 	<div class="skillbar clearfix " data-percent="15%">
+					<div class="skillbar-title"><span>Java</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.75 yr</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="10%">
+					<div class="skillbar-title"><span>C#</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.5 yr</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="15%">
+					<div class="skillbar-title"><span>Python</span></div>
+					<div class="skillbar-bar" style="background: #8350FF"></div>
+					<div class="skill-bar-percent">.75 yr</div>
+				</div> <!-- End Skill Bar -->
+			 </div>
+		 </div>
+	  </div>
 
+	  
+	  <! –– Contact ––>	  
+    <div class="container">
+      <hr>
+      <h2 id="contactSec">Contact</h2>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8  col-12 jumbotron">
+            <form action="https://formspree.io/xwkredzg" method="POST" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="named">Name</label>
+                <input type="text" class="form-control" id="named" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+	  </div>
 
-	
-	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+       <footer class="container-lg">
+		   <div class="row">
+			   <div class="col-12" style="margin: 0 0 0em 0">
+				  <img class="wavy-line" src="images/waves.png" style="width:100%">
+				<div class="boatMove">
+				  <img src="images/boat.png" class="boat" alt="paper boat moving left and right" />
+				</div>
+				</div>
+			</div>
+		   <div class="row">
+			<div class="col-lg-3 col-md-12 col-sm-12">
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<br>
+				<h5>Connect with me on:</h5>
+					<ul class="social row">
+					<div class="col-6"><li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><img src="images/linked.png" style="width: 15%;" alt="">LinkedIn</a></li></div>
+					<div class="col-6"><li><a href="https://www.youtube.com/channel/UC6FI_1rfUO1xU9VFGK6OybQ" target="_blank"><img src="images/youTube.png" style="width: 15%;" alt="">YouTube</a></li></div>
+					<div class="col-6"><li><a href="mailto:hannahmmonk@gmail.com" target="_blank"><img src="images/email.png" style="width: 15%" alt="">Email</a></li></div>
+					<div class="col-6"><li><a href="https://github.com/hmmonk999" target="_blank"><img src="images/GitHub-Mark.png" style="width: 15%;" alt="">GitHub</a></li></div>
+					</ul>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 1.5em">
+				<br>
+				<h5>Menu</h5>	
+				<a href="index.html#aboutSec" style="margin: 0 5px">About</a>
+				<a href="index.html#resumeSec" style="margin: 0 5px">Resume</a>
+				<a href="index.html#contactSec" style="margin: 0 5px">Contact</a>
+				<hr>
+				<p id="modify">Last Modified: <span id="modDate"></span></p>
+			</div>
+			    <div class="col-12" style="width: 100%; background-color: #0C151E; margin: 0;"><center><p>HannahMonk.me &copy; 2020 All Rights Reserved</p></center></div>
+			</div>
+  		  </footer>
+	  
+	  
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.2.1.js"></script>	
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		function myFunction() {
-		  if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
-			document.getElementById("imageNav1").className = "imageGrow";
-			document.getElementById("imageNav2").className = "imageGrow";
-			document.getElementById("imageNav3").className = "imageGrow";
-			document.getElementById("imageNav4").className = "imageGrow";
-			document.getElementById("imageNav5").className = "imageGrow";
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
+	  
+	 <script>
+  		$(function () {
+    	var element = $(".portIncomingRight");
+    		$(window).scroll(function () {
+      			if($(window).scrollTop() > 250) {
+        		element.addClass("animateMe");
+      			}
+			});
+  		});
+	  </script>
+	  
+	  <script>
+  		$(function () {
+    	var element = $(".portIncomingLeft");
+    		$(window).scroll(function () {
+      			if($(window).scrollTop() > 250) {
+        		element.addClass("animateMe2");
+      			}
+			});
+  		});
+	  </script>
+	  
+	  
+	  <script>
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+			  if($(window).scrollTop() >= 5) {
+				$("#topNav").animate({fontSize: "130%"}, { duration: 20, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 20, queue: false });
+				$("#topNav").animate({padding: ".2em"}, { duration: 20, queue: false });
+				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 20, queue: false });
+			  }
 			  
-			  document.getElementById("noText1").style.display = "none";
-			  document.getElementById("noText2").style.display = "none";
-			  document.getElementById("noText3").style.display = "none";
-			  document.getElementById("noText4").style.display = "none";
-			  document.getElementById("noText5").style.display = "none";
+			  if($(window).scrollTop() < 5) {
+				$("#topNav").animate({fontSize: "160%"}, { duration: 10, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 10, queue: false });
+				$("#topNav").animate({padding: ".75em"}, { duration: 10, queue: false });
+				$("#moveHam").animate({margin: "5px 0 0 8px"}, { duration: 10, queue: false });
+			  }
+		  });
+		});
+	  </script>
+	  	<script>
+		function myFunction(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
 		  } else {
-			document.getElementById("imageNav1").className = "imageSmol";
-			document.getElementById("imageNav2").className = "imageSmol";
-			document.getElementById("imageNav3").className = "imageSmol";
-			document.getElementById("imageNav4").className = "imageSmol";
-			document.getElementById("imageNav5").className = "imageSmol";
-			  
-			  document.getElementById("noText1").style.display = "inline";
-			  document.getElementById("noText2").style.display = "inline";
-			  document.getElementById("noText3").style.display = "inline";
-			  document.getElementById("noText4").style.display = "inline";
-			  document.getElementById("noText5").style.display = "inline";
+			y.style.display = "block";
 		  }
 		}
-	</script>
-	<script>
+		</script>
+	    <script>
+		function changeIcon(x) {
+		  x.classList.toggle("change");
+		}
+		</script>
+	  <script>
+		var textWrapper = document.querySelector('.ml1 .letters');
+		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  
+		   var textWrapper2 = document.querySelector('.ml13');
+		   var textWrapper3 = document.querySelector('.ml132');
+		  	var textWrapper4 = document.querySelector('.ml133');
+		  textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		   textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+		  	textWrapper4.innerHTML = textWrapper4.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+		anime.timeline({loop: false})
+		  .add({
+			targets: '.ml1 .letter',
+			scale: [0.3,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 200,
+			delay: (el, i) => 100 * (i+1)
+		  }).add({
+			targets: '.ml1 .line',
+			scaleX: [0,1],
+			opacity: [0.5,1],
+			easing: "easeOutExpo",
+			duration: 1000,
+			offset: '-=875',
+			delay: (el, i, l) => 80 * (l - i)
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 300,
+			delay: (el, i) => 0 + 30 * i
+		  }).add({
+			targets: '.ml132 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 300,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml133 .letter',
+			translateY: [100,0],
+			translateZ: 0,
+			opacity: [0,1],
+			easing: "easeOutExpo",
+			duration: 400,
+			delay: (el, i) => 100 + 30 * i
+		  }).add({
+			targets: '.ml13 .letter',
+			translateY: [-100,-100],
+			opacity: [1,1],
+			easing: "easeInExpo",
+			duration: 1200,
+			delay: (el, i) => 100 + 30 * i
+		  });
+	  </script>
+	  <script>
+		  
+		  $(document).ready(function(){
+		  $(window).scroll(function(){
+			  if($(window).scrollTop() > 2000) {
+				  jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},4000);
+				});
+			  } 
+		  });
+		});
+	  </script>
+	  <script>
 	  var x = document.lastModified;
 	  document.getElementById("modDate").innerHTML = x;
-	</script>
-	
-	<script>
-var myIndex = 0;
-carousel();
+	  </script>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3500); // Change image every 2 seconds
-}
-</script>
-	
-	
-</body>
+  </body>
 </html>
