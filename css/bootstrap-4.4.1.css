@@ -60,7 +60,7 @@ nav li a:hover {
 }
 
 #portMenu {
-	padding-left: 60px;
+		padding-left: 60px;
 	}
 #topNavLogo {
 	float: left; 
@@ -734,9 +734,9 @@ footer a:hover {
 	}
 
 	@keyframes MoveLeft {
-		0% {right: 200px}
+		0% {right: 100px}
 		50% {right: 0px}
-		85% {right: -50px}
+		85% {right: -15px}
 		100% {right: 0px}
 	}
 
@@ -768,9 +768,9 @@ footer a:hover {
 	}
 
 	@keyframes MoveLeft2 {
-		0% {left: 200px}
+		0% {left: 100px}
 		50% {left: 0px}
-		85% {left: -50px}
+		85% {left: -15px}
 		100% {left: 0px}
 	}
 
@@ -1338,8 +1338,8 @@ pre code {
 	  width: 20%;
 	  overflow: auto;
 	  float: left;
-	  margin: 0 0 .25em 0;
-	  padding: 0;
+	  margin: 0 0 -.5em 0;
+	  padding: 0em;
 	}
 
 	.miniMenu img {
@@ -1349,6 +1349,7 @@ pre code {
 	
 	.miniMenu p {
 	 display: block;
+	 font-size: 200%;
 	}
 
 	#topNavLogo {
@@ -1357,6 +1358,28 @@ pre code {
 	#moveHam {
 		display: none;
 	}
+	.portIncomingRight {
+      opacity: 0;
+	  transform: skew(0rad);
+    }
+    .portIncomingRight.animateMe {
+	  -webkit-animation: linear forwards;
+      -webkit-animation-name: Fade;
+      -webkit-animation-duration: 1s;
+      /*animation: Fade 1s linear 1s forwards;*/
+    }
+
+.portIncomingLeft {
+      opacity: 0;
+	  transform: skew(0rad);
+    }
+    .portIncomingLeft.animateMe2 {
+	  -webkit-animation: linear forwards;
+      -webkit-animation-name: Fade2;
+      -webkit-animation-duration: 1s;
+      /*animation: Fade 1s linear 1s forwards;*/
+    }
+
 }
 
 @media (min-width: 400px) {
@@ -1413,6 +1436,15 @@ pre code {
 	nav {
 	bottom: 0;
 	top: auto;
+	}
+	.miniMenu img {
+		width: 38%;
+		display: inline;
+	}
+	
+	.miniMenu p {
+	 display: block;
+	 font-size: 130%;
 	}
 }
 
@@ -1477,6 +1509,18 @@ pre code {
 	}
 	#topBackground {
 		margin-top: 0;
+	}
+	.miniMenu {
+	  margin: 0 0 -1.5em 0;
+	}
+	.miniMenu img {
+		width: 40%;
+		display: inline;
+	}
+	
+	.miniMenu p {
+	 display: block;
+	 font-size: 125%;
 	}
 }
 
@@ -1571,6 +1615,7 @@ pre code {
 	
 	.miniMenu p {
 		display: inline;
+		font-size: 100%;
 	}
 
 	#topNavLogo {
@@ -1580,6 +1625,29 @@ pre code {
 		display: inline;
 		position: absolute;
 	}
+	.portIncomingRight {
+      opacity: 0;
+	  transform: skew(.312rad);
+    }
+    .portIncomingRight.animateMe {
+	  -webkit-animation: linear forwards;
+      -webkit-animation-name: Fade, BounceSkew, MoveLeft;
+      -webkit-animation-duration: 2s, 1s, 1s;
+      /*animation: Fade 1s linear 1s forwards;*/
+    }
+
+
+.portIncomingLeft {
+      opacity: 0;
+	  transform: skew(.312rad);
+    }
+    .portIncomingLeft.animateMe2 {
+	  -webkit-animation: linear forwards;
+      -webkit-animation-name: Fade2, BounceSkew2, MoveLeft2;
+      -webkit-animation-duration: 2s, 1s, 1s;
+      /*animation: Fade 1s linear 1s forwards;*/
+    }
+
 }
 
 @media (min-width: 768px) {
