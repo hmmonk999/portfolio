@@ -46,15 +46,43 @@
 			left: 0;
 			border-radius: 3px 0 0 3px;
 		}
-
 		  
-		@media (min-width: 0px) {
+		@media (min-width: 300px) {
 			#unityGame {
 				padding: 1em;
 				margin-bottom: 4em;
 			}
 			#startGame {
 				margin-bottom: 0em
+			}
+			.nextRenderSlide {
+				font-size: 35px;
+			 	top: 40%;
+			}
+
+			.prevRenderSlide {
+				font-size: 35px;
+				top: 40%;
+			}
+		   }
+
+		  
+		@media (min-width: 475px) {
+			#unityGame {
+				padding: 1em;
+				margin-bottom: 4em;
+			}
+			#startGame {
+				margin-bottom: 0em
+			}
+			.nextRenderSlide {
+				font-size: 40px;
+			 	top: 40%;
+			}
+
+			.prevRenderSlide {
+				font-size: 40px;
+				top: 40%;
 			}
 		   }
 
@@ -65,6 +93,15 @@
 			}
 			#startGame {
 				margin-bottom: 0em
+			}
+			.nextRenderSlide {
+			   font-size: 50px;
+			   top: 50%;
+			}
+
+			.prevRenderSlide {
+				font-size: 50px;
+				top: 50%;
 			}
 		}
 
@@ -108,7 +145,7 @@
 		 <span class="miniMenu"><li><a href="index.html#aboutSec"><img src="images/iconMini-01.png" role="presentation" alt=""><p>About Me</p></a></li></span>
 		 <span class="miniMenu"><li><a href="index.html#resumeSec"><img src="images/iconMini-02.png" role="presentation" alt=""><p>Resume</p></a></li></span>
 		 <span class="miniMenu"><li><a href="index.html#contactSec"><img src="images/iconMini-03.png" role="presentation" alt=""><p>Contact</p></a></li></span>
-		 <span class="miniMenu"><li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true"><img src="images/iconMini-04.png" role="presentation" alt=""><p>Portfolio</p>
+		 <span class="miniMenu" onclick ="closeOpenPort();"><li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true"><img src="images/iconMini-04.png" role="presentation" alt="" id="portfolioIcon"><p>Portfolio</p>
 			  <span id="moveHam" aria-hidden="true">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
@@ -192,11 +229,10 @@
 	  	<div class="row">
 			<div class="col-12"><h3>3D Game Elements</h3></div>
 			<div class="col-12"><h4 style="color: #888888; margin-bottom: 20px">Game Elements built in Cinema4D</h4></div>
-			<div class="row text-center">
 				<div class="col-12"><h4>Game Element Scene</h4></div>
 				<br>
 				<div class="col-12"> 
-				<div class="slideshow-container">
+				<div class="slideshow-container text-center">
 					<div class="mySlides">
 					  <img src="images/3D/ex1.png" alt="0 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside" style="width:80%" class="img-thumbnail">
 					</div>
@@ -265,18 +301,16 @@
 				</script>
 			
 				<br>
-
-       
-        <div class="row text-center">
+			
+		 <div class="text-center">
 		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Pirate Ship</h5><img class="img-thumbnail" alt="3d render of a metal ship ship"  src="images/3D/ship.png" style="width: 90%;"></div>
 		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Metal Man</h5><img class="img-thumbnail" alt="3d render of a small metal robot with clear marble as a head"  src="images/3D/man.png" style="width: 90%;"></div>
           <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Bosun's Whistle</h5><img class="img-thumbnail" alt="a 3d render of a golden metal bosun's whistle"  src="images/3D/whistle.png" style="width: 90%;"></div>
           <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Light Blub</h5><img class="img-thumbnail" alt="a 3d render of a light bulb"  src="images/3D/light.png" style="width: 90%;"></div>
           <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Low Poly Grass</h5><img class="img-thumbnail" alt="a 3d render of several blades of low-poly grass"  src="images/3D/grass.png" style="width: 90%;"></div>
 		  <div class="col-lg-4 col-md-4 col-sm-12"><br><h5>Butterfly</h5><img class="img-thumbnail"  alt="a 3d render of a monarch butterfly sitting on a rock" src="images/3D/butterfly.png" style="width: 90%;"></div>
-        </div>
+		</div>
 		<br>
-	  </div>
 
 	</div>
     </div>
@@ -344,7 +378,16 @@
 		  });
 		});
 	  </script>
-	  
+	  <script>
+			function closeOpenPort() {
+			  var image = document.getElementById('portfolioIcon');
+			  if (image.src.match("iconClose")) {
+				image.src = "images/iconMini-04.png";
+			  } else {
+				image.src = "images/iconClose.png";
+			  }
+			}
+		</script>
 	  <script>
 		var textWrapper = document.querySelector('.ml1 .letters');
 		textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

@@ -80,7 +80,7 @@
 		 <span class="miniMenu"><li><a href="index.html#aboutSec"><img src="images/iconMini-01.png" role="presentation" alt=""><p>About Me</p></a></li></span>
 		 <span class="miniMenu"><li><a href="index.html#resumeSec"><img src="images/iconMini-02.png" role="presentation" alt=""><p>Resume</p></a></li></span>
 		 <span class="miniMenu"><li><a href="index.html#contactSec"><img src="images/iconMini-03.png" role="presentation" alt=""><p>Contact</p></a></li></span>
-		 <span class="miniMenu"><li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true"><img src="images/iconMini-04.png" role="presentation" alt=""><p>Portfolio</p>
+		 <span class="miniMenu" onclick ="closeOpenPort();"><li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true"><img src="images/iconMini-04.png" role="presentation" alt="" id="portfolioIcon"><p>Portfolio</p>
 			  <span id="moveHam" aria-hidden="true">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
@@ -742,6 +742,16 @@
 		  });
 		});
 	  </script>
+		<script>
+			function closeOpenPort() {
+			  var image = document.getElementById('portfolioIcon');
+			  if (image.src.match("iconClose")) {
+				image.src = "images/iconMini-04.png";
+			  } else {
+				image.src = "images/iconClose.png";
+			  }
+			}
+		</script>
 	  	<script>
 		function myFunction(x) {
 		  var y = document.getElementById("portLinks");
