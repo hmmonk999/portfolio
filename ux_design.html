@@ -20,23 +20,24 @@
   </head>
   <body>
 	 <nav role="navigation">
+		<div class="stripe"></div>
 	  	<ul id="topNav" class="navLarge" aria-label="menu">
-		  <a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="Hannah Monk .me homepage"></a>
-		  <li><a href="index.html#aboutSec">About Me</a></li>
-		  <li><a href="index.html#resumeSec">Resume</a></li>
-		  <li><a href="index.html#contactSec">Contact</a></li>
-		  <li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true">Portfolio
+		 <span class="miniMenu"><a href="index.html"><img src="images/HMlogo.png" id="topNavLogo" alt="homepage"></a></span>
+		 <span class="miniMenu"><li><a href="index.html#aboutSec"><img src="images/iconMini-01.png" role="presentation" alt=""><p>About Me</p></a></li></span>
+		 <span class="miniMenu"><li><a href="index.html#resumeSec"><img src="images/iconMini-02.png" role="presentation" alt=""><p>Resume</p></a></li></span>
+		 <span class="miniMenu"><li><a href="index.html#contactSec"><img src="images/iconMini-03.png" role="presentation" alt=""><p>Contact</p></a></li></span>
+		 <span class="miniMenu"><li><span onclick="changeIcon(this); myFunction()"><a href="javascript:void(0);" id="portMenu" style="cursor: pointer; font-weight: bold" aria-haspopup="true"><img src="images/iconMini-04.png" role="presentation" alt=""><p>Portfolio</p>
 			  <span id="moveHam" aria-hidden="true">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			  </span>
-			  </a></span></li>
+			  </a></span></li></span>
 		</ul>
 	  
 		<!-- Top Navigation Menu -->
 		<div class="hamnav container-lg">
-		  <div id="stripe"></div>
+		  <div class="stripe"></div>
 		  <div id="portLinks">
 			<ul class="row text-center" aria-label="submenu">
 				<li class="col-lg-2 col-md-2 col-sm-12"><a href="videos.html">VIDEO ART</a></li>
@@ -118,9 +119,9 @@
 	     <footer class="container-lg" style="margin-top: 1.5em;">
 		   <div class="row">
 			   <div class="col-12" style="margin: 0 0 0em 0">
-				  <img class="wavy-line" src="images/waves.png" style="width:100%">
+				  <img class="wavy-line" src="images/waves.png" style="width:100%" alt="" role="presentation">
 				<div class="boatMove">
-				  <img src="images/boat.png" class="boat" alt="paper boat moving left and right" />
+				  <img src="images/boat.png" class="boat" alt="" role="presentation"/>
 				</div>
 				</div>
 			</div>
@@ -145,7 +146,7 @@
 				<a href="index.html#resumeSec" style="margin: 0 5px">Resume</a>
 				<a href="index.html#contactSec" style="margin: 0 5px">Contact</a>
 				<hr>
-				<p id="modify">Last Modified: <span id="modDate"></span></p>
+				<p id="modify">Last Modified: <span id="modDate"></span></p><br>
 			</div>
 			    <div class="col-12" style="width: 100%; background-color: #0C151E; margin: 0;"><center><p>HannahMonk.me &copy; 2020 All Rights Reserved</p></center></div>
 			</div>
@@ -160,18 +161,18 @@
 	  <script>
 		$(document).ready(function(){
 		  $(window).scroll(function(){
-			  if($(window).scrollTop() >= 5) {
-				$("#topNav").animate({fontSize: "130%"}, { duration: 20, queue: false});
-				$("#topNav").animate({left: "1em"}, { duration: 20, queue: false });
-				$("#topNav").animate({padding: ".2em"}, { duration: 20, queue: false });
-				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 20, queue: false });
+			  if($(window).scrollTop() > 45) {
+				$("#topNav").animate({fontSize: "130%"}, { duration: 25, queue: false});
+				$("#topNav").animate({left: "1em"}, { duration: 25, queue: false });
+				$("#topNav").animate({padding: ".2em"}, { duration: 25, queue: false });
+				$("#moveHam").animate({margin: "0px 0 0 8px"}, { duration: 25, queue: false });
 			  }
 			  
-			  if($(window).scrollTop() < 5) {
+			  if($(window).scrollTop() <= 45) {
 				$("#topNav").animate({fontSize: "160%"}, { duration: 10, queue: false});
 				$("#topNav").animate({left: "1em"}, { duration: 10, queue: false });
 				$("#topNav").animate({padding: ".75em"}, { duration: 10, queue: false });
-				$("#moveHam").animate({margin: "5px 0 0 8px"}, { duration: 10, queue: false });
+				$("#moveHam").animate({margin: "1px 0 0 8px"}, { duration: 10, queue: false });
 			  }
 		  });
 		});
