@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hannah Monk UX Design</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  
+	<style>
+    </style>
+  </head>
+	<nav class="navbar nav sticky-top navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Navbar</a>
+      <div class="navbar-light navbar-brand">
+        <a class="navbar-brand" href="#">About Me</a>
+        <a class="navbar-brand" href="#">Resume</a>
+        <a class="navbar-brand" href="#">Contact</a>
+        <a href="javascript:void(0);" aria-haspopup="true" onclick="projectNav()"><span class="dropdown-toggle">Portfolio</span></a>
+     </div>
+
+ <div id="portLinks" class="nav container-fluid navbar navbar-dark bg-dark">
+    <ul class="row nav nav-justified" aria-label="submenu" >
+      <li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="ux.html" class="nav-link">UX/UI Design</a></li>
+      <li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="videos.html" class="nav-link">Videos</a></li>
+      <li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="personal_projects.html" class="nav-link">Personal Projects</a></li>
+    </ul>
+  </div>
+  </nav>
+   
+	 <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 style="font-size:  315%">Iowa Department of Transportation: Navigation Restructuring</h1>
+              <br>
+            </div>
+            <div class="col-12">
+                <a href="ux.html" target="_self" class="btn btn-primary">Back to UX Projects</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+	<section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <center><table style="width:90%" class="table">
+                <tr>
+                  <th scope="row">Industry</th>
+                  <td>Transportation, State Government</td>
+                </tr>
+                <tr>
+                    <th scope="row">My Deliverables</th>
+                    <td>Sitemap, Low-Fidelity Prototype (Adobe XD)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Team</th>
+                    <td>Me (Web Design Intern), Cherice (Web Team Leader), Rick (Web Designer)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Duration</th>
+                  <td>4 Weeks (July 2019)</td>
+              </tr>
+              </table></center>
+        </div>
+        <div class="col-12">
+          <h2>Background</h2>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h2>Our Problem Statement</h2>
+                  <p></p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12"><h3>Audience</h3><p></p></div>
+              <div class="col-lg-4 col-md-4 col-sm-12"><h3>Audience Goal</h3><p></p></div>
+              <div class="col-lg-4 col-md-4 col-sm-12"><h3>Business Goal</h3><p></p></div>
+              <div class="col-lg-6 col-md-6 col-sm-12"><h3>Our Challenges</h3><p></p><p></p></div>
+              <div class="col-lg-6 col-md-6 col-sm-12"><h3>Our Solution</h3></div>
+              <div class="col-12">
+                  <h2>Team Process</h2>
+              </div>    
+                  <div class="col-2"><h3 class="processTitle">1. Define</h3><p class="processLabel">Defining the problem</p></div>
+                  <div class="col-2"><h3 class="processTitle">2. Validate</h3><p class="processLabel">Audience interviews</p></div>
+                  <div class="col-2"><h3 class="processTitle">3. Ideate</h3><p class="processLabel">Audience analysis</p></div>
+                  <div class="col-2"><h3 class="processTitle">4. Prototype</h3><p class="processLabel">Current site analysis</p></div>
+                  <div class="col-2"><h3 class="processTitle">4. Develop</h3><p class="processLabel">Current site analysis</p></div>
+                  <div class="col-2"><h3 class="processTitle">6. Test</h3><p class="processLabel">Audience testing</p></div>
+          </div>
+      </div>
+  </div>
+  </section>
+	
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+      var x = document.lastModified;
+      document.getElementById("modDate").innerHTML = x;
+      </script>
+      <script>
+      function projectNav(x) {
+        var y = document.getElementById("portLinks");
+        if (y.style.display === "block") {
+        y.style.display = "none";
+        } else {
+        y.style.display = "block";
+        }
+      }
+      </script>
+  </body>
+</html>

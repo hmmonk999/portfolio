@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Hannah Monk UX Design</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Comfortaa&family=Raleway&family=Open+Sans&display=swap" rel="stylesheet">
+	<style>
+        .competitionImages{
+            width: 80%;
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 10px #ff5f4a,
+                0 0 0 16px #ee7c6e;
+        }
+        ::-moz-selection { /* Code for Firefox */
+            color: black;
+            background: #ee7c6e;
+            }
+
+        ::selection {
+            color: black;
+            background: #ee7c6e;
+            }
+        .btn-primary {
+            background-color: #ff5f4a;
+            border: #ff5f4a;
+            margin-bottom: 7em;
+        }
+        .btn-primary:hover {
+            background-color: #ff4e33;
+            box-shadow:
+                0 0 0 4px #ee7c6e;
+        }
+        .hci_link {
+            color:#ff5f4a;
+        }
+
+        .realistic-marker-highlight{
+            position:relative;
+            color: whitesmoke;
+              }
+
+          .realistic-marker-highlight:before{
+            content:"";
+            background-color:#ff5f4a;
+            width:115%;
+            height:3em;
+            position:absolute;
+            z-index:-1;
+            filter:url(#marker-shape);
+            left:-0.25em;
+            top: 0;
+            padding:0 0.25em;
+            font-size: medium;
+          }
+
+        .sticky {    
+          width: 80%; 
+          height: 15em;       
+          padding: 15px;
+          position:relative;     
+          border-top:60px solid #fdfd86;     
+          border-bottom-right-radius: 60px 5px;
+          background: #F6E283; /* Old browsers */
+          background: -moz-linear-gradient(-45deg, #F6E283 81%, #F6E283 82%, #F6E283 82%, #FDF2B0 100%); /* FF3.6+ */
+          background: -webkit-linear-gradient(-45deg, #F6E283 81%,#F6E283 82%,#F6E283 82%,#FDF2B0 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-45deg, #F6E283 81%,#F6E283 82%,#F6E283 82%,#FDF2B0 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(-45deg, #F6E283 81%,#F6E283 82%,#F6E283 82%,#FDF2B0 100%); /* IE10+ */
+          background: linear-gradient(135deg, #F6E283 81%,#F6E283 82%,#F6E283 82%,#FDF2B0 100%);
+          border:1px solid #E8E8E8;
+          border-top:40px solid #FDF2B0;
+        }
+        .sticky h3 {
+          font-family: 'Kalam', cursive;
+          font-size: x-large;
+        }
+
+        .sticky p {
+          font-family: 'Comfortaa', cursive;
+          font-size: large;
+        }
+
+        .sticky::after {
+          content: "";
+          position:absolute;
+          z-index:-1;
+          right: 0px; bottom:9px;
+          width:125px;
+          height: 25px;
+          background: rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 40px 27px 5px rgba(0, 0, 0, 0.40);
+          -webkit-box-shadow: 40px 27px 5px rgba(0, 0, 0, 0.40);
+          -o-box-shadow: 40px 27px 5px rgba(0, 0, 0, 0.40);
+          /* box-shadow: 40px 27px 5px rgba(0, 0, 0, 0.40); */
+          -moz-transform:skew(10deg,10deg) translate(-45px,-15px);
+          -webkit-transform:skew(5deg,5deg) translate(-45px,-15px);
+          -o-transform:skew(5deg,5deg) translate(-45px,-15px);
+          transform:skew(10deg,10deg) translate(-45px,-15px)
+        }
+
+        .table-findings td, .table-findings th {
+            border: none;
+            border-collapse: collapse;
+            padding: 3px;
+            text-align: center
+        }
+        .dot {
+        background-color: #ee7c6e;
+        }
+        .custom-shape-divider-bottom-1630035983 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1630035983 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 82px;
+            transform: rotateY(180deg);
+        }
+
+        .custom-shape-divider-bottom-1630035983 .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        ul {
+          list-style-type: square;
+        }
+
+        li {
+          margin: 15px 0;
+        }
+
+        @media (max-width: 985px) {
+        .sticky p {
+          font-size: small !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .sticky p {
+          font-size: medium !important;
+        }
+
+        .hide-small {
+          display: none !important;
+        }
+
+        .realistic-marker-highlight {
+          font-size: medium;
+          height: 1em !important;
+        }
+      }
+
+
+    </style>
+  </head>
+  <nav class="navbar nav sticky-top px-0" style="background-color: #131313; color: white;">
+    <a class="navbar-brand" href="index.html"><img src="logo.png" style="width: 5em;" alt="Hannah Monk logo"></a>
+      <div class="navbar-brand">
+        <a class="navbar-brand" href="#about_me">About Me</a>
+    <a href="javascript:void(0);" aria-haspopup="true" onclick="projectNav()"><span class="dropdown-toggle">Portfolio</span></a>
+     </div>
+
+ <div id="portLinks" class="container-fluid" style="background-color: #131313">
+    <ul class="row nav nav-justified text-center" aria-label="submenu" >
+      <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX/UI Design</a></li>
+      <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Videos</a></li>
+      <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #444;"><a href="personal_projects.html" class="nav-link"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
+    </ul>
+  </div>
+  </nav>
+   
+	 <header>
+      <div class="jumbotron" style="position: relative; background-color: whitesmoke;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 style="font-size:  315%">Usability-a-thon Winning Project</h1>
+              <h2>Iowa State: HCI 2019 Competition</h2>
+              <br>
+            </div>
+            <div class="col-12">
+                <a href="ux.html" target="_self" class="btn btn-primary">Back to UX Projects</a>
+              </div>
+          </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1630035983">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+      </div>
+      </div>
+    </header>
+	<section>
+
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <center><table style="width:90%" class="table">
+                <tr>
+                  <th scope="row">Industry</th>
+                  <td>Education, Campus Information System (Student Project)</td>
+                </tr>
+                <tr>
+                    <th scope="row">My Deliverables</th>
+                    <td>User Interviews, Usability Testing Reports, Clickable Prototype (Photoshop and Python)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Team</th>
+                    <td>Me (Technical Communication, Bachelor's), Jiztom (Machine Learning, PhD ), Karthick (Industrial Engineering Master's), Guilherme (Business, Bachelor's)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Duration</th>
+                    <td>8 hours (April 20, 2019)</td>
+                </tr>
+              </table></center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <h2>Competition Background</h2>
+              <p>Every Spring, the Iowa State Human Computer Interaction (HCI) graduate program puts on a <a href="https://projects.vrac.iastate.edu/hcistudentgroup/whats-a-usabilathon/" target="_blank" class="hci_link"><u>Usability-a-thon</u></a>, a hack-a-thon style event where graduate and undergraduate students are teamed up to define and solve a problem. Non-competing, student volunteers also come to the event to be participants for user testing.<br><br>I was teamed up with <i>3 random strangers</i>, Jiztom, Karthick, and Guilhermen. We were tasked to solve a problem that helped create trust between the user and a company. <br><br><span style="">In 8 hours, we created <strong>a competition winning case studying</strong> on why <strong>Iowa State should change the information architecture of AccessPlus</strong> so students can <strong>more easily change their privacy settings</strong>.</span></p>
+              <br><br>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6"><img src="images/hci/brainstorming.JPG" alt="All team members discussing a problem" class="competitionImages"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 hide-small"><img src="images/hci/process.JPG" alt="Hannah presenting the problem slide to a panel of judges" class="competitionImages"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6"><img src="images/hci/team-process.JPG" alt="Hannah presesting the process slide to a panel of judges" class="competitionImages"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 hide-small"><img src="images/hci/working.JPG" alt="Hannah and two other group members working on laptops" class="competitionImages"><br><br><br></div>
+            
+        </div>
+    </div>
+
+<div class="jumbotron" style="position: relative; background-color: whitesmoke; color: black">
+  <div class="custom-shape-divider-top-1630017010">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+    <div class="container" style="margin-top: 2em; margin-bottom: .5em;">
+        <div class="row">
+            <div class="col-12">
+                <h2 style="color: #ff4e33; font-weight: bold;">Our Problem Statement</h2>
+                <p>The Iowa State University public directory houses student emails and phone numbers are available to the public by default. Many students first learn about this friends, classmates, or the first time someone contacts them before they have given out their contact information. This personal information can be difficult to remove because of the location of the settings to turn them off.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><h3 style="color: #ff4e33; font-weight: bold; margin-top: .5em">Audience</h3><p>Iowa State Students</p></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><h3 style="color: #ff4e33; font-weight: bold; margin-top: .5em">Audience Goal</h3><p>More easily change their contact information privacy settings</p></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><h3 style="color: #ff4e33; font-weight: bold; margin-top: .5em">Our Challenges</h3><p>Time - we only had 8 hours</p><p>Lack of knowledge about business constraints</p></div>
+            <div class="col-lg-6 col-md-6 col-sm-12"><h3 style="color: #ff4e33; font-weight: bold; margin-top: .5em">Our Solution</h3>Change the information architecture on AccessPlus so the privacy settings are more easily found</div>    
+        </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1630030983">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+  </div>
+</div>
+    <div class="container">
+        <div class="row">
+          <section class=""></section>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">Learning About The Problem</span></h2>
+                <hr class="titleLine">
+            </div>
+            <div class="col-12">
+                <h3>My Story</h3>
+                <p>My junior year of college (about a month before the competion), I was emailed by a man, a non-student, who lived in Ames, IA. I had met him the day prior when he would not leave me alone at a club promotion event. He only knew my first name and my major. I even lied about what year I was, yet he was still able to find my Iowa State email address on the Iowa State Student Directory.</p>
+                <p>Luckily for me, the man was harmless and meant well, but I was terrifed and angry that I didn't know this could happen. I told my friends (both men and women) and many of them had similar stories. They had either been contacted by a non-student or a classmate who could not take a hint without giving away their contact information.</p>
+                <h3>The Problem</h3>
+                <ol>
+                    <li>Lack of Information: I didn't know my email and phone number were public by default.</li>
+                    <li>Bad Directions: It took me a very long time to figure out how to change my privacy settings.</li>
+                </ol>
+            </div>
+            <div class="col-12">
+              <center>
+                <span class="dot"></span>
+                <span class="dot circle"></span>
+                <span class="dot"></span>
+              </center>
+            </div>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">User Opinions On Their Data Privacy</span></h2>
+                <hr>
+                <p>My team and I wanted to formally interview some Iowa State students to confirm our suspicions about the lack of  and learn more about student preferences. As a team, we formed several hypotheses and created list of questions to help gather qualitative data about the following:</p>
+              
+              <div class="row">
+                  <div class="col-lg-1 col-md-1 col-sm-2"><center><br><img src="images/hci/user-interviews-05.png" alt="" class="hide-small" style="width:90%"></center></div>
+                  <div class="col-lg-4 col-md-4 col-sm-9" style=""><br><p><strong>What types of contact information</strong> students were fine with being available to the public and to other students.</p></div>
+                  <div class="col-lg-1 col-md-1 col-sm-2"><center><br><img src="images/hci/user-interviews-04.png" alt="" class="hide-small" style="width:90%"></center></div>
+                  <div class="col-lg-4 col-md-4 col-sm-9" style=""><br><p><strong>How</strong> students would want to change their privacy settings.</p></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-2"><center><br><img src="images/hci/user-interviews-06.png" alt="" class="hide-small" style="width:90%"></center></div>
+                <div class="col-lg-4 col-md-4 col-sm-9" style=""><br><p><strong>If students knew</strong> their contact information was available to the pubic and if so, <strong>how they found out</strong></p></div>
+                <div class="col-lg-1 col-md-1 col-sm-2 hide-small"><center><br><img src="images/hci/user-interviews-12.png" alt="" class="" style="width:90%"></center></div>
+                <div class="col-lg-4 col-md-4 col-sm-9" style=""><br><p>If the university should<strong>do more to inform students</strong> about the Iowa State public directory</p></div>
+            </div>
+          </div>
+            <div class="col-12">
+                <br><h3>Hypothesis:</h3>
+                <ol>
+                    <li>Most students don't remember being told by the university that their email and phone number is available to the public.</li>
+                    <li>Most students do not want their email or phone number to be available to the public</li>
+                    <li>Most students will be fine with their emails being accessible to other students, but not their phone number.</li>
+                </ol>
+            </div>
+            <div class="col-8">
+                <h3>Test Users</h3>
+                <p style="color: grey">In order to particapate in our test, users had to be Iowa State students who were familiar with AccessPlus.</p>
+                <p style="padding-top: 10px; padding-bottom: 10px"><span class="border" style="padding: 15px;"><strong style="color: #ff4e33">5</strong> undergrad students, <strong style="color: #ff4e33">1</strong> transfer student, <strong style="color: #ff4e33">3</strong> graduate students</span></p>
+          </div>
+        </div>
+        <div class="row align-items-end">
+              <div class="col-12">
+                  <h3>Results</h3>
+                  <p>To make the best use of our VERY limited time, we broke up the work and each interview 2 students. Here is what we found:</p>
+                  <ul>
+                    <li>Most students had not been told by the university that their phone number and email . One student remembered an email from the university, the other seven learned about it from friends or classmates.</li>
+                    <li>More than half of students are fine with their emails to available to Iowa State students, but not their phone number.</li>
+                    <li>More than half of students do not want their phone number or email available to the general public.</li>
+                    <li>100% of students wanted to be able to control their privacy settings themselves.</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <p style="font-weight: bold;"><br>What type of contact information are you fine with being <span style="color: #ff4e33; font-weight: bold;">public to Iowa State students</span>?</p>
+                <table class="table table-findings">
+                  <tr style="border-bottom: 1px solid black">
+                    <th scope="col" style="background: #ff4e33; color: white">None</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Email Only</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Phone Only</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Email and Phone</th>
+                  </tr>
+                  <tr>
+                    <td style="background: whitesmoke;">1 student</td>
+                    <td style="background: whitesmoke;">5 student</td>
+                    <td style="background: whitesmoke;">0 students</td>
+                    <td style="background: whitesmoke;">2 student</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <p style="font-weight: bold;"><br>What type of contact information are you fine with being <span style="color: #ff4e33; font-weight: bold;">public to everyone</span>?</p>
+                <table class="table table-findings">
+                  <tr style="border-bottom: 1px solid black">
+                    <th scope="col" style="background: #ff4e33; color: white">None</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Email Only</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Phone Only</th>
+                    <th scope="col" style="background: #ff4e33; color: white">Email and Phone</th>
+                  </tr>
+                  <tr>
+                    <td style="background: whitesmoke;">5 students</td>
+                    <td style="background: whitesmoke;">2 student</td>
+                    <td style="background: whitesmoke;">0 students</td>
+                    <td style="background: whitesmoke;">1 student</td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+          <div class="row">
+
+            <div class="col-12">
+              <center>
+                <span class="dot"></span>
+                <span class="dot circle"></span>
+                <span class="dot"></span>
+              </center>
+            </div>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">Brainstorming Solutions</span></h2>
+                <hr class="titleLine">
+            </div>
+            <div class="col-12">
+              <p>We knew that our solution had to allow students to control their own settings and it had to be visible enough that any student could see it. To come up with a solution, we wrote anything we could think of down on a sticky note with the philosophy that there was no bad ideas. Then, as a group, we decided our top 3 solutions and listed out the pros and cons of each.</p>
+              <p>We ended up deciding to test solution 1, changing the navigation. You can see the origional flow under the "Testing the Current Website" section and the flow we came up with under the "Building the Prototype" section.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <br>
+              <div class="sticky">
+                <h3>Idea 1</h3>
+                <hr>
+                <p>Update AccessPlus Navigation to increase privacy setting visability</p>
+              </div>
+                <br>
+                <p><u>Pros</u><br>1. Solves the larger problem <br>2. All students (even freshman) know how to use AccessPlus</p>
+                <p><u>Cons</u><br>1. Possible unknown business constraints<br>2. Already lots of side navigation elements, possible findability problem</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <br>
+              <div class="sticky">
+                <h3>Idea 2</h3>
+                <hr>
+                <p>Update Instructions on Student Directory</p>
+              </div>
+                <br>
+                <p><u>Pros</u><br>1. Very easy to implement, low tech</p>
+                <p><u>Cons</u><br>1. Students may not learn about the directory for a few months or more into college<br>2. Students may not read the directions</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <br>
+              <div class="sticky">
+                <h3>Idea 3</h3>
+                <hr>
+                <p>Remove the filtering section on the Student Directory</p>
+              </div>
+                <br>
+                <p><u>Pros</u><br>1. Makes it harder for students to be found, unless you know them</p>
+                <p><u>Cons</u><br>1. Students may have the same name/major/classification</p>
+            </div>
+            <div class="col-12">
+              <center>
+                <span class="dot"></span>
+                <span class="dot circle"></span>
+                <span class="dot"></span>
+              </center>
+            </div>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">Testing the Current Website</span></h2>
+                <hr class="titleLine">
+                <p>Along with the student volunteers, there were also UX professions to help with mentoring and user testing. We asked the employees to be our test users becuase we wanted to test on users who had little knowledge about the website. While they weren't the target audience, they would have the same amount of knowledge about AccessPlus as incoming freshman.</p>
+                <p>We broke up into teams of two and tested two years each. For my team, I took notes while Guilherme asked the questions and Karthick took notes while Jiztom asked the questions. We asked our users to think out loud while they were doing the task.</p>
+                <h3>The Original Process</h3>
+            </div>
+            <div class="col-lg-3">
+                <p style="font-weight: bolder;">Step 1. Click on the student tab</p>
+            </div>
+            <div class="col-3">
+                <p style="font-weight: bolder;">Step 2. Click on "Address Change" in the side menu</p>
+            </div>
+            <div class="col-3">
+                <p style="font-weight: bolder;">Step 3. Click on "ISU Directory privacy options" link</p>
+            </div>
+            <div class="col-3">
+                <p style="font-weight: bolder;">Step 4. Change the privacy settings</p>
+            </div>
+            <div class="col-12">
+              <img src="images/hci/full-flow-02.png" alt="the entire origional flow of to change the privacy settings on AccessPlus" style="width: 100%; margin-top:-15px">
+            </div>
+          </div>
+          <div class="row align-items-end">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p><br><strong>Task 1:</strong> Find the page to change privacy settings, without the instructions on the Student Directory site (incoming freshman wouldn't know about this)</p>
+              <table class="table table-findings">
+                <tr style="border-bottom: 1px solid black">
+                  <th scope="col" style="background: #ff4e33; color: white">Success Rate</th>
+                  <th scope="col" style="background: #ff4e33; color: white">Average Error Clicks</th>
+                  <th scope="col" style="background: #ff4e33; color: white">Average Time</th>
+                </tr>
+                <tr>
+                  <td style="background: whitesmoke;">0%</td>
+                  <td style="background: whitesmoke;">8 clicks</td>
+                  <td style="background: whitesmoke;">4 minutes</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p><br><strong>Task 2:</strong> Find the page to change privacy settings, with the instructions</p>
+              <table class="table table-findings">
+                <tr style="border-bottom: 1px solid black">
+                  <th scope="col" style="background: #ff4e33; color: white">Success Rate</th>
+                  <th scope="col" style="background: #ff4e33; color: white">Average Error Clicks</th>
+                  <th scope="col" style="background: #ff4e33; color: white">Average Time</th>
+                </tr>
+                <tr>
+                  <td style="background: whitesmoke;">75%</td>
+                  <td style="background: whitesmoke;">2 clicks</td>
+                  <td style="background: whitesmoke;">83 seconds</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <center>
+                <span class="dot"></span>
+                <span class="dot circle"></span>
+                <span class="dot"></span>
+              </center>
+            </div>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">Building the Prototype</span></h2>
+                <hr class="titleLine"> 
+                <p>During task 1 of testing, no one could find the settings page. When given directions from the ISU directory telling them to go to the "Address Change" tab, 3 out of 4 users were able to find how to change their settings. The user who did not sucessfully complete the second task struggled to see the  "ISU Directory privacy options" link.</p>
+                <p>To solve both of these problems, we removed the extra step of going to the "Address Change" tab by giving "Privacy Settings" it's own place in the side navigation.</p>
+                <p>To actually build a prototype to test, I photoshopped some screenshots of AccessPlus. I sent them to Jiztom, who used python to make them interactive.</p><br>
+            </div>
+            <div class="col-lg-4">
+              <p style="font-weight: bolder;">Step 1. Click on the student tab</p>
+          </div>
+          <div class="col-4">
+              <p style="font-weight: bolder;">Step 2. Click on "Privacy Settings" link</p>
+          </div>
+          <div class="col-4">
+              <p style="font-weight: bolder;">Step 3. Change the privacy settings</p>
+          </div>
+          <div class="col-12">
+            <img src="images/hci/full-flow-updated-02.png" alt="the entire prototype flow of to change the privacy settings on AccessPlus" style="width: 100%; margin-top:-15px">
+          </div>
+            <div class="col-12">
+              <center>
+                <span class="dot"></span>
+                <span class="dot circle"></span>
+                <span class="dot"></span>
+              </center>
+            </div>
+            <div class="col-12">
+                <h2><span class="realistic-marker-highlight">Testing the Prototype</span></h2>
+                <hr class="titleLine"><br>
+            </div>
+            <div class="col-lg-4 col-md-4 ool-sm-12">
+              <center>
+                <figure>
+                  <img src="images/hci/usability-testing.JPG" class="competitionImages" alt="Guilherme asking a user about their experience using the prototype." style="width: 60%">
+                </figure>
+              </center>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+              <h3>Results</h3>
+              <p>Because of the 8-hour time constraint, we were only able to test our prototype on one user. He was able to navigate to the settings on AccessPlus without the extra instructions! While it's not statistically significant at all, here is the result:</p>
+              <table class="table table-findings">
+                <tr style="border-bottom: 1px solid black">
+                  <th scope="col" style="background: #ee7c6e;">Success Rate</th>
+                  <th scope="col" style="background: #ee7c6e;">Error Clicks</th>
+                  <th scope="col" style="background: #ee7c6e;">Time</th>
+                </tr>
+                <tr>
+                  <td style="background: whitesmoke;">100%</td>
+                  <td style="background: whitesmoke;">0</td>
+                  <td style="background: whitesmoke;">52 seconds</td>
+                </tr>
+        </table>
+            </div>
+                
+            <div class="col-12">
+                <br><h2>What I learned?</h2>
+                <hr>
+                <p><strong>Some problems might be a symptom of something larger.</strong> The problem my team choose to solve wasn't a simple one. There were multiple good solutions to the problem, but we needed to think about what was cause the problem as well. In this case, the problem wasn't that someone emailed me. It was that I didn't know it was possible in the first place.</p>
+                <p><strong>Not all user experience problems need a highly technical solution.</strong> Something as simple as making directions simpler and more visual can be an easy to implement solution.</p>
+                <p><strong>The user's experience can start before they even touch their phone or computer.</strong> Technology is never designed in isolation. It starts with a problem someone is facing in the real world.</p>
+                <p><strong>Storytelling is key.</strong> While I think my team's idea and our UX process was really well thoughtout, so were the other team's ideas. We ended up getting first, instead of second or third, because we were able to use our qualitative and quantitative to tell a story.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+	<section>
+		<div class="header">
+			<!--Waves Container-->
+				<div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">	
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="#131313" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="#222222" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#131313" />
+				</g>
+				</svg>
+				</div>
+			<!--Waves end-->
+			</div>
+			<!--Header ends-->
+			<footer style="background: #131313;">
+				<div class="boatMove" style="background: none;">
+					<img src="images/boat.png" class="boat" alt="" role="presentation"/>
+				  </div>
+			<div class="">	
+					<div class="container-fluid mt-5">
+						<div class="card mx-5">
+							<div class="row mb-4 ">
+								<div class="col-md-4 col-sm-11 col-xs-11">
+									<div class="footer-text pull-left">
+										<div class="d-flex">
+											<h1 style="color: white">Hannah Monk</h1>
+										</div>
+										<p class="card-text">I'm a UX designer based in Des Moines, IA. I've designed for iOS, android, and web. My design process starts with interviewing and testing with real users then finds the right balance between user needs and business goals.</p>
+										</div>
+								</div>
+								<div class="col-md-1 col-sm-1 mb-2"></div>
+							
+								<div class="col-md-3 col-sm-12">
+									<h5 class="heading">Portfolio</h5>
+									<hr>
+									<ul class="card-text">
+										<li><a href="ux.html"><i class="fa fa-pencil-ruler"></i> UX Design</a></li>
+										<li><a href="videos.html"><i class="fa fa-film"></i> Video Art</a></li>
+										<li><a href="personal_projects.html"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
+									</ul>
+								</div>
+								<div class="col-md-4 col-sm-12">
+									<h5 class="heading">Connect With Me</h5>
+									<hr>
+									<ul class="card-text">
+										<li><a href="mailto: hannahmmonk@gmail.com"><i class="fas fa-envelope"> </i>   hannahmmonk@gmail.com</a></li>
+										<li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><i class="fab fa-linkedin"> </i>  LinkedIn</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="divider mb-4"> </div>
+							<div class="row" style="font-size:10px;">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="pull-left">
+										<p><i class="fas fa-copyright"></i> 2021 hannahmonk</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</section>
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+      <defs>
+        <filter id="marker-shape">
+          <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+    </svg>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+		var x = document.lastModified;
+		document.getElementById("modDate").innerHTML = x;
+		</script>
+	  <script>
+		function projectNav(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
+		  } else {
+			y.style.display = "block";
+		  }
+		}
+		</script>
+  </body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hannah Monk Design</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Comfortaa&family=Raleway&display=swap" rel="stylesheet">
+	<style>
+		#portLinks {
+  			display: none;
+		}
+
+		.testimonial-images {
+			box-shadow: 0px 0px 5px #666;
+			border-radius: 100%;
+		}
+
+		.testimonial-images:focus {
+			border: 2px solid #666;
+			box-shadow: none;
+		}
+
+		.testimonial-images:hover {
+			box-shadow: 0px 0px 15px #888;
+		}
+
+		.clearfix::after {
+			display: block;
+			clear: both;
+			content: "";
+		}
+		/*Skill Bars------------------------------------------------------------------------------*/
+		.Count:after{
+  content:"%"
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:15px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	font-weight:bold;
+	font-size:12px;
+	color:#ffffff;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 5px;
+	height:15px;
+	line-height:15px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:15px;
+	width:0px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background: #17a2b8;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:8px;
+	top:0;
+	font-size:11px;
+	height:15px;
+	line-height:15px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+	font-weight:bold;
+}
+	</style>
+  </head>
+  <body>
+	<nav class="navbar nav sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+          <div class="navbar-light navbar-brand">
+            <a class="navbar-brand" href="#">About Me</a>
+            <a class="navbar-brand" href="#">Resume</a>
+            <a class="navbar-brand" href="#">Contact</a>
+			<a href="javascript:void(0);" aria-haspopup="true" onclick="projectNav()"><span class="dropdown-toggle">Portfolio</span></a>
+         </div>
+		
+		 <div id="portLinks" class="nav container-fluid navbar navbar-dark bg-dark">
+				<ul class="row nav nav-justified" aria-label="submenu" >
+					<li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="ux.html" class="nav-link">UX/UI Design</a></li>
+					<li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="videos.html" class="nav-link">Videos</a></li>
+					<li class="nav-item col-lg-4 col-md-4 col-sm-12"><a href="personal_projects.html" class="nav-link">Personal Projects</a></li>
+				</ul>
+		  </div>
+      </nav>
+
+   
+	 <header>
+      <div class="jumbotron">
+        <div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-9 col-sm-12">
+				<h1>Hi! I'm Hannah.</h1>
+				<h2><strong>UX Designer</strong> by day</h2>
+				<h2>and by night (and sometimes day):</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-1 col-md-2 col-sm-2"><p>Video Creator</p><img src="" alt="" width="100%"></div>
+				<div class="col-lg-1 col-md-2 col-sm-2"><p>World Traveler</p><img src="images/me/fun-fact-03.png" alt="" width="100%"></div>
+				<div class="col-lg-1 col-md-2 col-sm-2"><p>Pokemon Player</p><img src="images/me/fun-fact-02.png" alt="" width="100%"></div>
+				<div class="col-lg-1 col-md-2 col-sm-2"><p>Survivor Superfan</p><img src="" alt="" width="100%"></div>
+			</div>
+        </div>
+      </div>
+    </header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3>My Portfolio</h3></div>
+			</div>
+			<div class="row">
+				<div class="col-4"><a href="ux.html">UX Design</a></div>
+				<div class="col-4"><a href="videos.html">Animations and Videos</a></div>
+				<div class="col-4"><a href="websites.html">Personal Projects</a></div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<section>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3>About Me</h3></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<center><img src="images/collegeme.png" width="60%"></center>
+					<br>
+					<h4>Currently</h4>
+					<hr>
+					<p>I'm currently a <strong>UX Designer</strong> for <a href="" target="_blank">Wellmark Blue Cross Blue Shield</a>, a large healthcare insurance company in the midwest.</p>
+					<p>With my team, I'm improving the design and flow of a new feature to help insurance agents, employers, and employees work more collaboratively. I was able to <strong>analyze data</strong> from <strong>user interviews</strong>, <strong>unmoderated usability tests</strong>, and <strong>A/B tests</strong> to understand the problem and validate the designs on 3 different applications. </p>
+					<p>I'm also using my <strong>writing</strong> skills to create project management documentation to improve the efficiency the pre-project approval process.</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<center><img src="images/collegeme.png" width="60%"></center>
+					<br>
+					<h4>Techstars</h4>
+					<hr>
+					<p>As the design associate for the first <a href="https://www.techstars.com/accelerators/iowa" target="_blank">Techstars Iowa</a> cohort, I mastered <strong>time management</strong>, <strong>task prioritzation</strong>, and the <strong>presentation of designs and findings</strong> to clients by working 10 start-ups at once.</p>
+					<p>Most of my work comprised of UI design, animation, or presentation design.</p> 
+					<p>I'm most proud of the data visualization I made for Neolth student mental health mobile and web app that combines vizulation for qualitative and quantitative data to help students see their month-to-month mental health progress. I was even able to get my design validated by a panel of students that use the app!</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12">
+					<center><img src="images/collegeme.png" width="60%"></center>
+					<br>
+					<h4>College</h4>
+					<hr>
+					<p>I graduated from Iowa State University in May 2020 with a major in technical communication and a minor in digital media. My major help learn more about <strong>human computer interaction</strong>, <strong>audience analysis</strong>, and <strong>writing</strong>.</p>
+					<p>My internship at the Iowa Dot is where I got my first exposure to using user research to validate and solve design problems by using <strong>qualitative surveys results</strong> and <strong>Google Analytics</strong> to inform my design choices.</p>
+					<p>I also grew <strong>public speaking</strong> skills by giving many design or writing related lectures as the TA for a technical communication course, the president of Society for Technical Communication, and a presentor at two STEM conferences for middle school girls.</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<br>
+	<section>
+		<div class="container">
+			<div class="row">
+			  <div class="col-12"><h2>Skills</h2></div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>UX Design</h4>
+				  </div>
+				  <div class="skillbar clearfix" data-percent="50%">
+					 <div class="skillbar-title"><span>Wireframing</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">2.5 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="60%">
+					 <div class="skillbar-title"><span>Information Architecture</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">3 yrs</div>
+				 </div> <!-- End Skill Bar -->
+			  </div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>Prototyping Tools</h4>
+				  </div>
+				  <div class="skillbar clearfix " data-percent="60%">
+					 <div class="skillbar-title"><span>Adobe XD</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">3 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="40%">
+					 <div class="skillbar-title"><span>Figma</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">2 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="20%">
+					 <div class="skillbar-title"><span>Sketch</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1 yr</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="20%">
+					 <div class="skillbar-title"><span>Cinema4D</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1 yr</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="10%">
+					 <div class="skillbar-title"><span>Unity 3D</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">.5 yr</div>
+				 </div> <!-- End Skill Bar -->
+			  </div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>UX Research</h4>
+				  </div>
+				  <div class="skillbar clearfix " data-percent="40%">
+					 <div class="skillbar-title"><span>Surveys</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">2 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="30%">
+					 <div class="skillbar-title"><span>Google Analytics</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1.5 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="30%">
+					 <div class="skillbar-title"><span>Heat Maps</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1.5 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="30%">
+					 <div class="skillbar-title"><span>Moderated Usability Studies</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1.5 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="20%">
+					 <div class="skillbar-title"><span>Unmoderated Usability Studies</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1 yr</div>
+				 </div> <!-- End Skill Bar -->
+			  </div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>Programming</h4>
+				  </div>
+				  <div class="skillbar clearfix " data-percent="80%">
+					 <div class="skillbar-title"><span>HTML/CSS</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">4 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="60%">
+					 <div class="skillbar-title"><span>Bootstrap</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">3 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="40%">
+					 <div class="skillbar-title"><span>JavaScript</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">2 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="15%">
+					 <div class="skillbar-title"><span>Python</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">.75 yr</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="10%">
+					 <div class="skillbar-title"><span>C#</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">.5 yr</div>
+				 </div> <!-- End Skill Bar -->
+			  </div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>Writing</h4>
+				  </div>
+				  <div class="skillbar clearfix " data-percent="80%">
+					 <div class="skillbar-title"><span>Technical Writing</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">4 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="40%">
+					 <div class="skillbar-title"><span>Blog Writing</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">2 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				 <div class="skillbar clearfix " data-percent="20%">
+					 <div class="skillbar-title"><span>Microcopy</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">1 yr</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="80%">
+					 <div class="skillbar-title"><span>Editing</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">4 yrs</div>
+				 </div> <!-- End Skill Bar -->
+				  <div class="skillbar clearfix " data-percent="80%">
+					 <div class="skillbar-title"><span>Document Design</span></div>
+					 <div class="skillbar-bar"></div>
+					 <div class="skill-bar-percent">4 yrs</div>
+				 </div> <!-- End Skill Bar -->
+			  </div>
+			  <div class="col-lg-4 col-md-6 col-sm-12">
+				  <div class="col-12">
+					  <h4>Soft Skills</h4>
+				  </div>
+				  <p>Strengthsfinder Top 5:</p>
+				  <ol>
+					  <li>Ideation</li>
+					  <li>Strategic - the ability quickly spot the relevant patterns, issues</li>
+					  <li>Adaptibility</li>
+					  <li>Empathy</li>
+					  <li></li>
+				  </ol>
+			  </div>
+		  </div>
+	   </div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12"><h3>Testimonials</h3></div>
+			</div>
+		   <div class="row">
+
+				<div class="col-lg-1 col-md-2"><input type="image" onclick="currentSlide(1)" class="testimonial-images" alt="Login" src="images/company_logos/wellmark.jpg" style="width: 100%"></div>
+				<div class="col-lg-1 col-md-2"><input type="image" onclick="currentSlide(2)" class="testimonial-images" alt="Login" src="images/company_logos/tempore.png" style="width: 100%"></div>
+				<div class="col-lg-1 col-md-2"><input type="image" onclick="currentSlide(3)" class="testimonial-images" alt="Login" src="images/company_logos/CivicChamps.png" style="width: 100%"></div>						
+				<div class="col-lg-1 col-md-2"><input type="image" onclick="currentSlide(4)" class="testimonial-images" alt="Login" src="images/company_logos/openloop.png" style="width: 100%"></div>
+				<div class="col-lg-1 col-md-2"><input type="image" onclick="currentSlide(5)" class="testimonial-images" alt="Login" src="images/company_logos/neolth.png" style="width: 100%"></div>
+		
+			</div>
+			<div class="row">
+				<div class="col-12">
+				  <div class="mySlides" style="width: 100%">
+						<p><br>Hannah is my go-to-girl. If I needed something knocked out quickly and done right the first time, I would assign it to Hannah. While she is the youngest and the least experienced team member, she does have a robust design process and follows directions. She listens and writes down what needs to happen, then, more importantly, executes those directions. If you ask her how long she needs to deliver, she never takes longer than she estimates either; Hannah always has on time or early work. In addition, she fosters relationships with the stakeholders and other team members. Her work product is always on point, and she is always thinking, "how can I improve this to make it a better experience for the audience" not just the user, but also the viewer of the wireframes. She is one of the most valuable assets that we have in the Wellmark UX team.</p>
+					    <p style="float: right;"><strong>~ Charity Jantzen, UX Lead at Wellmark</strong><br><img style="float: right;  width=auto; height: 50px" src="images/company_logos/wellmark-long.png"></p>
+					  <br>
+					  
+				  </div>
+				  <div class="mySlides" style="width: 100%">
+						<p><br>Hannah helped us with multiple design projects, including presentation decks, logos, and user interface design for our application. Hannah’s work is exceptional and she truly has an amazing eye for design. She really takes the time to understand the user experience needs, and is extremely thoughtful in crafting her approach. Serving as the designer for the whole Techstars cohort is a daunting task, with dozens of design projects running simultaneously and in an accelerated fashion. Hannah pulled off managing this incredible workload with both ease and poise. I truly enjoyed working with Hannah, her designs are incredible, and wholeheartedly recommend her! You rock Hannah!</p>
+					  <p style="float: right;"><strong>~ Parker Schlank, CEO & Cofounder at Tempore</strong><br><img style="float: right;  width=auto; height: 50px" src="images/company_logos/tempore-long.png"></p>
+				  </div>
+				  <div class="mySlides" style="width: 100%">
+						<p><br>Hannah has such a diverse repertoire of design skills. Through the Techstars Iowa program, we were lucky to have Hannah help us create an animated introduction for Civic Champs. She led us through that process end-to-end including storyboarding, design, and the final animation. In addition, I have been really impressed by the work she has done for other companies in our cohort including graphic design for pitch decks, icons, zoom backgrounds, etc. It’s rare to find a creative who can design, craft story, and understands the technical work involved for video creation. Hannah is the total package!</p>
+					    <p style="float: right;"><strong>~ Geng Wang, CEO at Civic Champs</strong><br><img style="float: right;  width=auto; height: 50px" src="images/company_logos/CivicChamps-long.png"></p>
+				  </div>
+
+				  <div class="mySlides" style="width: 100%">
+						<p><br>Hannah has a great design eye and skillset to compliment. She understood what we were trying to achieve. Taking our random thoughts, she turned them into actual product imagery. Any design team would be lucky to have Hannah as an addition.</p>
+					  <p style="float: right;"><strong>~ Jon Lensing, CEO at OpenLoop</strong><br><img style="float: right;  width=auto; height: 50px" src="images/company_logos/openloop-long.png"></p>
+				  </div>
+
+				  <div class="mySlides" style="width: 100%">
+						<p><br>Hannah is a talented designer and all around great person! She helped us complete a product redesign quickly and beautifully. Her work enabled us to reach our program goal of launching Version 2.0 of our product. I highly recommend her for design projects.</p>
+					  <p style="float: right;"><strong>~ Katherine Grill, CEO & Cofounder at Neolth</strong><br><img style="float: right;  width=auto; height: 50px" src="images/company_logos/neolth-long.png"></p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("videoSlides");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+		  <script>
+		  
+			$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(window).scrollTop() > 0) {
+					jQuery('.skillbar').each(function(){
+				  jQuery(this).find('.skillbar-bar').animate({
+					  width:jQuery(this).attr('data-percent')
+				  },4000);
+				  });
+				} 
+			});
+		  });
+		</script>
+		<script>
+		var x = document.lastModified;
+		document.getElementById("modDate").innerHTML = x;
+		</script>
+	  <script>
+		function projectNav(x) {
+		  var y = document.getElementById("portLinks");
+		  if (y.style.display === "block") {
+			y.style.display = "none";
+		  } else {
+			y.style.display = "block";
+		  }
+		}
+		</script>
+	    <script>
+		function changeIcon(x) {
+		  x.classList.toggle("change");
+		}
+		</script>
+  
+  </body>
+</html>

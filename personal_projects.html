@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Hannah Monk UX Design</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Comfortaa&family=Raleway&display=swap" rel="stylesheet">
+	  
+	<style>
+    	.designFeatures {
+			   list-style-type: "⧉";
+		  }
+
+      nav a:hover {
+        color:#3682ff;
+        text-decoration: underline;
+      }
+
+      footer a:hover {
+        color: #3682ff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar nav sticky-top px-0" style="background-color: #131313; color: white;">
+      <a class="navbar-brand" href="index.html"><img src="logo.png" style="width: 5em;" alt="Hannah Monk logo"></a>
+        <div class="navbar-brand">
+          <a class="navbar-brand" href="#about_me">About Me</a>
+      <a href="javascript:void(0);" aria-haspopup="true" onclick="projectNav()"><span class="dropdown-toggle">Portfolio</span></a>
+       </div>
+  
+   <div id="portLinks" class="container-fluid" style="background-color: #222">
+      <ul class="row nav nav-justified text-center" aria-label="submenu" >
+        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX/UI Design</a></li>
+        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Videos</a></li>
+        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #444;"><a href="personal_projects.html" class="nav-link"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
+      </ul>
+    </div>
+    </nav>
+   
+	 <header>
+      <div class="jumbotron" style="background-color: #3682ff;">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <h1 style="font-size:  400%; color: white;">Personal Projects</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+	<section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Solar System Design Game</h2>
+          <h3>3D game built in Unity3D with C#</h3><br>
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Current Design Features</h4>
+            <ul class="designFeatures">
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planet Customizer with 20 planet bodies, customizable orbit paths and speed, optional moon addition, and 3 size options</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planet edit and planet destroy buttons</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Planets get destroyed when they get to close to each other</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Front and top camera views</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Zoomable Camera</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Number of current active planets counter</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Number of total destroyed planets counter</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Upcoming Design Features</h4>
+            <ul class="designFeatures">
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Design mode vs Challenge mode</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Multiple sun types/levels</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Score card between levels</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Error message explaining how a planet got destroyed</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Sprite animation and sound when a planet is destroyed</span></li>
+              <li style="color: #3682ff; font-weight: bold; padding-left: 15px"><span style="color: #000000; font-weight: normal;">Loading screen</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-1 col-md-12"></div>
+          <div class="col-lg-10 col-md-12 text-center" id="startGame" style="color: #888888;">Press the "Front View" button under Camera View to access the planet menu. Press a plus button under the Planet Controler to add a planet.</div>
+          <div class="col-lg-1 col-md-12"> </div>
+          <div class="col-lg-1 col-md-12"> </div>
+          <div class="col-lg-10 col-md-12">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://i.simmer.io/@hmmonk/solar-system-game" class="embed-responsive-item" id="unityGame"></iframe>
+            </div>
+          </div>
+      
+        <div class="col-12">
+          <h2><br><br>Surreal Experiments 3D Scene: Lightblub Plant and Ship in a Bottle</h2>
+          <h3>3D assets built in Cinema4D</h3><br>
+        </div>
+        <div class="col-lg-1 col-md-12"> </div>
+        <div class="col-lg-10 col-md-12">
+          <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/3D/ex1.png" alt="0 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex2.png" alt="45 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex3.png" alt="90 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex4.png" alt="135 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex6.png" alt="225 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex7.png" alt="270 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3D/ex8.png" alt="315 degree angle of a ship in a bottle with a thunderstom inside and a lightbulb with with a tree and two butterflys inside">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+            <br>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+	<section>
+		<div class="header">
+			<!--Waves Container-->
+				<div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">	
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="#131313" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="#3682ff" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#131313" />
+				</g>
+				</svg>
+				</div>
+			<!--Waves end-->
+			</div>
+			<!--Header ends-->
+			<footer style="background: #131313;">
+				<div class="boatMove" style="background: none;">
+					<img src="images/boat.png" class="boat" alt="" role="presentation"/>
+				  </div>
+			<div class="">	
+					<div class="container-fluid mt-5">
+						<div class="card mx-5">
+							<div class="row mb-4 ">
+								<div class="col-md-4 col-sm-11 col-xs-11">
+									<div class="footer-text pull-left">
+										<div class="d-flex">
+											<h1 style="color: white">Hannah Monk</h1>
+										</div>
+										<p class="card-text">I'm a UX designer based in Des Moines, IA. I've designed for iOS, android, and web. My design process starts with interviewing and testing with real users then finds the right balance between user needs and business goals.</p>
+										</div>
+								</div>
+								<div class="col-md-1 col-sm-1 mb-2"></div>
+							
+								<div class="col-md-3 col-sm-12">
+									<h5 class="heading">Portfolio</h5>
+									<hr style="background-color: #3682ff;">
+									<ul class="card-text">
+										<li><a href="ux.html"><i class="fa fa-pencil-ruler"></i> UX Design</a></li>
+										<li><a href="videos.html"><i class="fa fa-film"></i> Video Art</a></li>
+										<li><a href="personal_projects.html"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
+									</ul>
+								</div>
+								<div class="col-md-4 col-sm-12">
+									<h5 class="heading">Connect With Me</h5>
+									<hr style="background-color: #3682ff;">
+									<ul class="card-text">
+										<li><a href="mailto: hannahmmonk@gmail.com"><i class="fas fa-envelope"> </i>   hannahmmonk@gmail.com</a></li>
+										<li><a href="https://www.linkedin.com/in/hannah-monk-0323b8142/" target="_blank"><i class="fab fa-linkedin"> </i>  LinkedIn</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="divider mb-4"> </div>
+							<div class="row" style="font-size:10px;">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="pull-left">
+										<p><i class="fas fa-copyright"></i> 2021 hannahmonk</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+      function projectNav(x) {
+        var y = document.getElementById("portLinks");
+        if (y.style.display === "block") {
+        y.style.display = "none";
+        } else {
+        y.style.display = "block";
+        }
+      }
+      </script>
+  </body>
+</html>
