@@ -362,21 +362,25 @@ p,
 .btn-email, .btn-email a {
   color: #f6a622 !important;
   background: white !important;
+  box-shadow: #f6a622 0 0 0 1.5px;
 }
 
 .btn-youtube, .btn-youtube a {
   color: #e52d27 !important;
   background: #ffffff !important;
+  box-shadow: #e52d27 0 0 0 1.5px;
 }
 
 .btn-linkedin, .btn-linkedin a {
   color: #0177b5 !important;
   background: #ffffff !important;
+  box-shadow: #0177b5 0 0 0 1.5px;
 }
 
 .btn-instagram, .btn-instagram a {
   color: #E1306C !important;
   background: #ffffff !important;
+  box-shadow: #E1306C 0 0 0 1.5px;
 }
 
 .btn-email:hover,
