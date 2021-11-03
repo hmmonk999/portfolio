@@ -41,7 +41,7 @@
 }
 
 nav  {
-  box-shadow: 0 0 10px 5px black;
+  box-shadow: 0 0 10px 0px black;
 }
 
 nav a:hover {
@@ -109,7 +109,7 @@ footer ul>a:hover {
   cursor: pointer
 }
 
-footer hr {
+footer hr, .project-hr {
   width: 1.5em;
   height: 2px;
   color: #ff4949;
@@ -125,6 +125,80 @@ footer .social>i {
 footer .social>i:hover {
   color: #957bda;
   cursor: pointer
+}
+
+.myButton3 {
+  text-decoration: none;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased; 
+  position: relative;
+  padding: 0.5em 1em;
+  padding-right: 4em;
+  border: none;
+  color: white;
+  transition: 0.2s;
+  min-width: 15em;
+  cursor: pointer;
+}
+.myButton3:before,
+.myButton3:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  width: 2.8em;
+  content: "";
+  font-size: 1.2em;
+  text-align: center;
+  transition: 0.2s;
+  transform-origin: 50% 60%;
+}
+.myButton3:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.myButton3:active,
+.myButton3:focus {
+  outline: none;
+}
+
+.myButton3.arrow {
+  background: #FE5F55;
+}
+.myButton3.arrow:hover {
+  background: #ff4949;
+}
+.myButton3.arrow:active,
+.myButton3.arrow:focus {
+  background: #eb3a3a;
+}
+.myButton3.arrow:after {
+  content: "➔";
+}
+.myButton3.arrow:hover:after {
+  -webkit-animation: bounceright 0.3s alternate ease infinite;
+  animation: bounceright 0.3s alternate ease infinite;
+}
+
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
 }
 
 
@@ -232,10 +306,9 @@ footer .social>i:hover {
 }
 
 .icons span {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
-  color: #848590
-}
+  }
 
 .section-title {
   margin-bottom: 38px
@@ -9185,7 +9258,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 1rem !important;
 }
 
 .pr-5,
