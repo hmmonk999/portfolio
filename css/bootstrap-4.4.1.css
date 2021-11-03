@@ -175,7 +175,7 @@ footer .social>i:hover {
   background: #eb3a3a;
 }
 .myButton3.arrow:after {
-  content: "➔";
+  content: '\2794';
 }
 .myButton3.arrow:hover:after {
   -webkit-animation: bounceright 0.3s alternate ease infinite;
