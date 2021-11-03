@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="icon.png">
-    <title>Hannah Monk UX Design</title>
+    <title>Hannah Monks</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Comfortaa&family=Raleway&display=swap" rel="stylesheet">	  
 	<style>
     .caseStudy {
-      padding: 2em;
-      margin: .5em 0;
+      margin: 1em 0;
       background-color: whitesmoke;
     }
 
@@ -31,6 +30,42 @@
                 0 0 0 4px #ff4949;
     }
 
+    .btn-dark {
+      background-color: #777;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: #777;
+      cursor:default;
+      border: none;
+    }
+
+    .card {
+      border-radius: .5em;
+      border: none;
+    }
+
+    .card-body  {
+      background-color: white;
+      outline: none;
+      border-radius: .5em;
+    }
+
+    .outOfBox {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    .myButton3 {
+		position: relative;
+		padding: 0.5em 1em;
+		padding-right: 4em;
+		border: none;
+		min-width: 15em;
+		}
+
   </style>
 
   </head>
@@ -38,14 +73,14 @@
     <nav class="navbar nav sticky-top px-0" style="background-color: #131313; color: white;">
       <a class="navbar-brand" href="index.html"><img src="logo.png" style="width: 5em;" alt="Hannah Monk logo"></a>
         <div class="navbar-brand">
-          <a class="navbar-brand" href="#about_me">About Me</a>
+          <a class="navbar-brand" href="index.html#about_me">About Me</a>
       <a href="javascript:void(0);" aria-haspopup="true" onclick="projectNav()"><span class="dropdown-toggle">Portfolio</span></a>
        </div>
   
    <div id="portLinks" class="container-fluid" style="background-color: #222">
       <ul class="row nav nav-justified text-center" aria-label="submenu" >
-        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX/UI Design</a></li>
-        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Videos</a></li>
+        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX Design</a></li>
+        <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Animations</a></li>
         <li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #444;"><a href="personal_projects.html" class="nav-link"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
       </ul>
     </div>
@@ -53,73 +88,91 @@
 
    
 	 <header>
-      <div class="jumbotron" style="background-color: #ff4949; color: white">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h1 style="font-size: 400%">User Experience Design Projects</h1>
-            </div>
+    <div class="jumbotron" style="background-color: #ff4949">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <center><h1 style="font-size:  350%; color: white;">User Experience Design Projects</h1></center>
+          </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 	<section>
 
   <section>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="caseStudy">
-          <h2>App Redesign and Restructuring</h2>
+      <div class="row mb-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <img src="images/hci/lapis.png" alt="wrapkit" style="width: 100%" class=""/>
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 align-self-center pl-5">
+          <h2>Personalized Medical Blood Pressure Reduction App</h2>
           <h3>Lapis</h3>
+          <hr class="project-hr">
           <div>
             <span class="badge badge-pill badge-dark">UX</span>
             <span class="badge badge-pill badge-dark">UI</span>
             <span class="badge badge-pill badge-dark">Research</span>
-          </div>
-          <p><strong>Team Process: </strong>Define, Validate, Ideate, Test, Prototype, Test</p>
-          <p><strong>My Deliverables: </strong>Empathy Maps, User Flows, High-Fidelity Prototype</p>
-          <a target="_parent" class="btn btn-outline-light">Coming Soon!</a>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="caseStudy">
-          <h2>Pre-Project Approval Workshop</h2>
-          <h3>Wellmark Blue Cross Blue Shield</h3>
-          <div>
-            <span class="badge badge-pill badge-dark">UX Workshop</span>
-          </div>
-          <p><strong>Team Process: </strong>Define, Ideate, Protoype, Test</p>
-          <p><strong>My Deliverables: </strong>Project Approval Workshop, Project Pitch Template</p>
-          <a href="case-study_Wellmark.html" target="_parent" class="btn btn-primary">View Project Details</a>
+            
+            <p class="mt-2">Many low-income black and hispanic people diagnosed with heart disease and high blood pressure are struggling to improve their health. The Lapis Health app creates 2-week long programs to help users change their habits and track their blood pressure.</p>
+            <p><strong>My Deliverables: </strong>User Journey Map, User Flows, High-Fidelity Prototype</p>
+            <div class="btn btn-dark" href="ux.html" style="margin-top: .5em; margin-bottom: 1em;">Coming Soon!</div>
           </div>
         </div>
-        <div class="col-12">
-          <div class="caseStudy">
+      </div>
+      <hr>
+      <div class="row mt-5 mb-5">
+        <div class="col-7 align-self-center">
           <h2>Usability-A-Thon Winning Project</h2>
           <h3>Iowa State: HCI 2019 Competition</h3>
+          <hr class="project-hr">
           <div>
             <span class="badge badge-pill badge-dark">UX</span>
             <span class="badge badge-pill badge-dark">Research</span>
-          </div>
-          <p><strong>Team Process: </strong> Empathise, Define, Validate, Test, Ideate, Protype, Test</p>
-          <p><strong>My Deliverables: </strong>Problem Validation Interviews, Usability Testing Reports, Clickable Prototype (Photoshop and Python)</p>
-          <a href="ISU_HCI_usability-a-thon.html" target="_parent" class="btn btn-primary">View Project Details</a>
+            <p class="mt-2">Iowa State University students have their contact information available to the public, but many students aren't aware of that until they are contacted by another student or a community member.</p>
+            <p><strong>My Deliverables: </strong>Problem Validation Interviews, Usability Testing Reports, Clickable Prototype (Photoshop and Python)</p>
+            <a class="btn btn-danger fade-in myButton3 arrow" href="ISU_HCI_usability-a-thon.html" style="margin-top: .5em; margin-bottom: 1em;">View Case Study</a>
           </div>
         </div>
-        <div class="col-12">
-          <div class="caseStudy">
+        <div class="col-5">
+          <img src="images/hci/accessplus.png" alt="wrapkit" class="outOfBox" style="width: 100%" />
+        </div>
+      </div>
+      <hr>
+      <div class="row mb-5">
+        <div class="col-5">
+          <img src="images/hci/techcomm.png" alt="wrapkit" class="outOfBox" style="width: 100%" />
+        </div>
+        <div class="col-7 align-self-center">
           <h2>Technical Communication Website Redesign</h2>
-          <h3>Class Project</h3>
+          <h3>Course Project</h3>
+          <hr class="project-hr">
           <div>
             <span class="badge badge-pill badge-dark">UX</span>
             <span class="badge badge-pill badge-dark">UI</span>
             <span class="badge badge-pill badge-dark">Research</span>
+            <p class="mt-2">The technical communication major at Iowa State teaches the importance of design rhetoric, infomration architecture, and good writing, but the users and stakeholders feel that these teachings are not reflected in the website design.</p>
+            <p><strong>My Deliverables: </strong>Personsas, Stakeholder Interviews, WCAG Testing Report, User Testing Reports, Wordpress Website Redesign</p>
+            <a class="btn btn-danger fade-in myButton3 arrow" href="case-study_Tech-Comm-Website.html" style="margin-top: .5em; margin-bottom: 1em;">View Case Study</a>
           </div>
-          <p><strong>My Process: </strong>Empathise, Define, Test, Ideate, Prototype, Test</p>
-          <p><strong>My Deliverables: </strong>Personsas, Stakeholder Interviews, WCAG Testing Report, User Testing Reports, Wordpress Website Redesign</p>
-          <a href="case-study_Tech-Comm-Website.html" target="_parent" class="btn btn-primary">View Project Details</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row mt-5 mb-5">
+        <div class="col-7 align-self-center">
+          <h2>Pre-Project Approval Workshop</h2>
+          <h3>Wellmark</h3>
+          <hr class="project-hr">
+          <div>
+            <span class="badge badge-pill badge-dark">Workshop</span>
+            <p class="mt-2">A remote workshop to help design leadership and other stakeholders find the core issues behind a problem and the reasons to solve it or not.</p>
+            <p><strong>My Deliverables: </strong>Workshop Template</p>
+            <a class="btn btn-danger fade-in myButton3 arrow" href="ux.html" style="margin-top: .5em; margin-bottom: 1em;">View Case Study</a>
           </div>
+        </div>
+        <div class="col-5">
+          <img src="images/hci/workshop.png" alt="wrapkit" class="outOfBox" style="width: 100%"/>
         </div>
       </div>
     </div>
