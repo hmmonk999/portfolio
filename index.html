@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="icon.png">
-    <title>Hannah Monk Design</title>
+    <title>Hannah Monk</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -177,93 +177,14 @@
 		}
 
 		.myButton3 {
-  text-decoration: none;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased; 
-  position: relative;
-  padding: 0.5em 1em;
-  padding-right: 4em;
-  border: none;
-  color: white;
-  transition: 0.2s;
-  min-width: 15em;
-  cursor: pointer;
-}
-.myButton3:before,
-.myButton3:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding-top: inherit;
-  padding-bottom: inherit;
-  width: 2.8em;
-  content: "";
-  font-size: 1.2em;
-  text-align: center;
-  transition: 0.2s;
-  transform-origin: 50% 60%;
-}
-.myButton3:before {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.myButton3:active,
-.myButton3:focus {
-  outline: none;
-}
-
-.myButton3.arrow {
-  background: #FE5F55;
-}
-.myButton3.arrow:hover {
-  background: #ff4949;
-}
-.myButton3.arrow:active,
-.myButton3.arrow:focus {
-  background: #eb3a3a;
-}
-.myButton3.arrow:after {
-  content: "➔";
-}
-.myButton3.arrow:hover:after {
-  -webkit-animation: bounceright 0.3s alternate ease infinite;
-  animation: bounceright 0.3s alternate ease infinite;
-}
+		position: relative;
+		padding: 0.5em 1em;
+		padding-right: 4em;
+		border: none;
+		min-width: 15em;
+		}
 
 
-@-webkit-keyframes bounceright {
-  from {
-    -webkit-transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(3px);
-  }
-}
-@-webkit-keyframes wiggle {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(30deg);
-  }
-}
-@keyframes bounceright {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(3px);
-  }
-}
-@keyframes wiggle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(30deg);
-  }
-}
 
 
 	</style>
@@ -278,8 +199,8 @@
 		
 		 <div id="portLinks" class="container-fluid" style="background-color: #222">
 				<ul class="row nav nav-justified text-center" aria-label="submenu" >
-					<li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX/UI Design</a></li>
-					<li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Videos</a></li>
+					<li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #222;"><a href="ux.html" class="nav-link"><i class="fa fa-pencil-ruler"></i> UX Design</a></li>
+					<li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #333;"><a href="videos.html" class="nav-link"><i class="fa fa-film"></i> Animations</a></li>
 					<li class="col-lg-4 col-md-4 col-sm-12" style="background-color: #444;"><a href="personal_projects.html" class="nav-link"><i class="fa fa-gamepad"></i> Personal Projects</a></li>
 				</ul>
 		  </div>
@@ -319,54 +240,55 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-title">Check Out My Portfolio Projects</h2>
+					<h2 class="twelve">Check Out All Of My Projects</h2><br>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="card border-0 shadow rounded-xs pt-5">
+					<div class="card border-0 shadow rounded-xs pt-5" style="margin-bottom: 2em;">
 						<div class="card-body"> 
 							<h4 class="mt-2 mb-3"> <i class="fa fa-pencil-ruler icon-lg icon-red icon-bg-red icon-bg-circle mb-3"></i><span class="m-3" style="font-size: 130%">UX Design</span></h4>
 							<hr>
 							<div class="d-flex flex row align-items-center mr-2 mt-1">
 								<ul class="projectList">
-									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>UX Workshops<br></span> </div></li>
 									<li><div class="icons"> <i class="fa fa-check-circle"></i> <span>User Research</span> </div></li>
 									<li><div class="icons"> <i class="fa fa-check-circle last"></i> <span>Prototypes</span> </div></li>
+									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>UX Workshops<br></span> </div></li>
 								</ul>
 							</div>
 						</div>
-						<a class="btn text-light" href="ux.html" style="width: 100%; background-color: #ff4949;" role="button">View My Case Studies  <i class="fa fa-chevron-right"></i></a>
+						<a class="btn btn-danger fade-in myButton3 arrow" href="ux.html" style="margin-top: -1em; margin-bottom: 0;">View My UX Projects</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="card border-0 shadow rounded-xs pt-5">
+					<div class="card border-0 shadow rounded-xs pt-5" style="margin-bottom: 2em;">
 						<div class="card-body"> 
-							<h4 class="mt-2 mb-3"><i class="fa fa-film icon-lg icon-yellow icon-bg-cyan icon-bg-circle icon-bg-yellow mb-3"></i><span class="m-3" style="font-size: 130%">Video Art</span></h4>
+							<h4 class="mt-2 mb-3"><i class="fa fa-film icon-lg icon-yellow icon-bg-cyan icon-bg-circle icon-bg-yellow mb-3"></i><span class="m-3" style="font-size: 130%">Animation</span></h4>
 							<hr>
 							<div class="d-flex flex row align-items-center mr-2 mt-1">
 								<ul class="projectList">
-									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>Script Writing<br></span> </div></li>
-									<li><div class="icons"> <i class="fa fa-check-circle"></i> <span>Animation</span> </div></li>
-									<li><div class="icons"> <i class="fa fa-check-circle"></i> <span>Voice Work</span> </div></li>
+									<li><div class="icons"> <i class="fa fa-check-circle"></i> <span>UI Animation</span> </div></li>
+									<li><div class="icons"> <i class="fa fa-check-circle"></i> <span>2D Video Animation</span> </div></li>
+									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>Video and Audio Editing<br></span> </div></li>
 								</ul>
 							</div>
 						</div>
-						<a class="btn text-light" href="videos.html" style="width: 100%; background-color: #f6a622; margin-top: 5px" role="button">Watch My Videos  <i class="fa fa-chevron-right"></i></a>
+						<a class="btn btn-danger fade-in myButton3 arrow" href="videos.html" style="background-color: #f6a622; margin-top: -1em; margin-bottom: 0;">Watch My Animations</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="card border-0 shadow rounded-xs pt-5">
+					<div class="card border-0 shadow rounded-xs pt-5" style="margin-bottom: 2em;">
 						<div class="card-body"> 
 							<h4 class="mt-2 mb-3"><i class="fa fa-gamepad icon-lg icon-blue icon-bg-blue icon-bg-circle mb-3"></i><span class="m-3" style="font-size: 100%">Personal Projects</span></h4>
 							<hr>
 							<div class="d-flex flex row align-items-center mr-2 mt-1">
 								<ul class="projectList">
+									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>C# Code<br></span> </div></li>
 									<li><div class="icons"><i class="fa fa-check-circle"></i> <span>Unity Game Development<br></span> </div></li>
 									<li><div class="icons"> <i class="fa fa-check-circle last"></i> <span>Cinema 4D Assets</span> </div></li>
 									<li> </li>
 								</ul>
 							</div>
 						</div>
-						<a class="btn text-light" href="personal_projects.html" style="width: 100%; background-color: #3682ff;" role="button">Play With My Projects  <i class="fa fa-chevron-right"></i></a>
+						<a class="btn btn-danger fade-in myButton3 arrow" href="personal_projects.html" style=" background-color: #3682ff; margin-top: -1em; margin-bottom: 0;">Play With My Projects</a>
 					</div>
 				</div>
 
@@ -383,7 +305,7 @@
 		</div>
 		<div class="container goAway goAway-bottom p-0">
 			<div class="row">
-				<div class="col-12"><p style="font-size:240%; font-weight: bold; color: white">My goal as a UX designer is to <span style="color: #ff4949"><i>solve human problems</i></span>. Thinking about the bigger picture is the way to solve them. User problems start way before someone opens their computer or downloads an app. </p></div>
+				<div class="col-12"><p style="font-size:240%; font-weight: bold; color: white">My goal as a UX designer is to <span style="color: #ff4949"><i>solve human problems</i></span>. I believe thinking about the bigger picture is the way to solve them. User problems start way before someone opens their computer or downloads an app. </p></div>
 			</div>
 		</div>
 		<div class="custom-shape-divider-bottom-1630215794" id="about_me">
